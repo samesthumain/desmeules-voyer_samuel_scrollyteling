@@ -1,0 +1,166 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Nanum+Brush+Script&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Brush+Script&display=swap');
+
+:root {
+    /*--mauve: #7530e3;
+    --rose: #e1afcc;
+    --vert: #5dac9c;*/
+
+    --gris-mur: #597081;
+    --gris-mur-fonce: #4d6170;
+
+
+    --blanc: #ffffff;
+    --noir: #000000;
+}
+
+* {
+    /*font-family: "Nanum Brush Script";*/
+    /*font-family: "Big Shoulders Stencil Text";*/
+    font-family: "Cousine";
+}
+
+h1,
+.h1 {
+    
+    font-size: 70px;
+    color: var(--blanc);
+
+    font-family: "Big Shoulders Stencil Text";
+    
+    text-align: center;
+    top: 50%;
+}
+
+h2,
+.h2 {
+    font-size: 30px;
+    color: var(--vert);
+}
+
+h3,
+.h3 {
+    font-size: 22px;
+    color: var(--noir);
+}
+
+h4,
+.h4 {
+    font-size: 16px;
+    color: var(--noir);
+}
+
+h5,
+.h5 {
+    font-size: 12px;
+    color: var(--mauve);
+}
+
+h6,
+.h6 {
+    font-size: 10px;
+    color: var(--mauve);
+}
+
+p,
+.p {
+    font-size: 12px;
+    color: var(--blanc);
+}
+
+
+/*éléments de la page*/
+
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(/img/img_arriere_plan/espace_background_opt_2.jpg);
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    /*overflow: hidden;*/
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#chapitre1 {
+    /*code que j'ai pris en ligne et légèrement modifié: https://codepen.io/josetxu/pen/VwWVKJd */
+	--units: 1vmax;
+	/*--brick1: #CC0000;*/
+	/*--brick2: #DD0000;*/
+	/*--lines: #565656;*/
+	--gp-ln: 50%/calc(var(--units) * 10) calc(var(--units) * 5);
+	--gp-cn: 50%/calc(var(--units) * 5) calc(var(--units) * 5);
+	height: 100vh;
+	background: 
+		repeating-conic-gradient(from 90deg at 95% 55%, var(--noir) 0% 25%, #fff0 0% 100%) var(--gp-cn), 
+		repeating-linear-gradient(180deg, var(--noir) 0 5%, #fff0 0 50%, var(--noir) 0 55%, var(--gris-mur-fonce) 0 100% ) var(--gp-ln), 
+		repeating-linear-gradient(90deg, var(--gris-mur) 0 47.5%, var(--noir) 0 50%, var(--gris-mur) 0 97.5%, var(--noir) 0 100% ) var(--gp-ln);
+    /*le code que j'ai pris en ligne finit ici*/
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    margin: 0%;
+
+    background-color: #000000;
+
+    border-top: red 1px solid;
+    border-bottom: red 1px solid;
+}
+
+
+/*dans le header*/
+
+.descTitre{
+    text-align: center;
+    margin:20px;
+    z-index: 1;
+}
+
+.vaisseau{
+    position: absolute;
+    width: 15vw;
+    height: auto;
+}
+
+/*appel à l'action*/
+
+.appel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appelAction{
+    height: 55px;
+    width: 30px;
+    border: 2px solid var(--blanc);
+    border-radius: 33%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appelPoint{
+    height: 10px;
+    width: 10px;
+    background-color: var(--blanc);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/*dans le main*/
