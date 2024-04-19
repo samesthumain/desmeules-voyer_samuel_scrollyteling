@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Nanum+Brush+Script&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Brush+Script&display=swap');
 
 :root {
@@ -69,57 +67,39 @@ p,
     color: var(--blanc);
 }
 
-
-/*éléments de la page*/
+/*Styles généraux*/
 
 body{
     margin: 0%;
     padding: 0%;
+
+    height: 10000vh;
     overflow-x: hidden;
 }
+
+/*.spriteSheet{
+    background-image: ;
+    animation-iteration-count: infinite;
+}*/
+
+body.is-scrolling .spriteSheet{
+    animation-play-state: running;
+}
+
+/*Styles dans le header*/
 
 header {
     background-image: url(/img/img_arriere_plan/espace_background_opt_2.jpg);
     background-size: 100%;
     height: 100vh;
     width: 100vw;
-    /*overflow: hidden;*/
+    overflow: hidden;
     position: relative;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
-#chapitre1 {
-    /*code que j'ai pris en ligne et légèrement modifié: https://codepen.io/josetxu/pen/VwWVKJd */
-	--units: 1vmax;
-	/*--brick1: #CC0000;*/
-	/*--brick2: #DD0000;*/
-	/*--lines: #565656;*/
-	--gp-ln: 50%/calc(var(--units) * 10) calc(var(--units) * 5);
-	--gp-cn: 50%/calc(var(--units) * 5) calc(var(--units) * 5);
-	height: 100vh;
-	background: 
-		repeating-conic-gradient(from 90deg at 95% 55%, var(--noir) 0% 25%, #fff0 0% 100%) var(--gp-cn), 
-		repeating-linear-gradient(180deg, var(--noir) 0 5%, #fff0 0 50%, var(--noir) 0 55%, var(--gris-mur-fonce) 0 100% ) var(--gp-ln), 
-		repeating-linear-gradient(90deg, var(--gris-mur) 0 47.5%, var(--noir) 0 50%, var(--gris-mur) 0 97.5%, var(--noir) 0 100% ) var(--gp-ln);
-    /*le code que j'ai pris en ligne finit ici*/
-}
-
-section{
-    height: 100vh;
-    width: 100vw;
-    margin: 0%;
-
-    background-color: #000000;
-
-    border-top: red 1px solid;
-    border-bottom: red 1px solid;
-}
-
-
-/*dans le header*/
 
 .descTitre{
     text-align: center;
@@ -162,5 +142,43 @@ section{
     z-index: 1;
 }
 
+/*Styles dans le main*/
 
-/*dans le main*/
+section{
+    height: 100vh;
+    width: 100vw;
+    margin: 0%;
+
+    background-color: #000000;
+
+    border-top: red 1px solid;
+    border-bottom: red 1px solid;
+}
+
+/*Chapitre 1*/
+
+#chapitre1 {
+    /*code que j'ai pris en ligne et légèrement modifié: https://codepen.io/josetxu/pen/VwWVKJd */
+	--units: 1vmax;
+	/*--brick1: #CC0000;*/
+	/*--brick2: #DD0000;*/
+	/*--lines: #565656;*/
+	--gp-ln: 50%/calc(var(--units) * 10) calc(var(--units) * 5);
+	--gp-cn: 50%/calc(var(--units) * 5) calc(var(--units) * 5);
+	height: 100vh;
+	background: 
+		repeating-conic-gradient(from 90deg at 95% 55%, var(--noir) 0% 25%, #fff0 0% 100%) var(--gp-cn), 
+		repeating-linear-gradient(180deg, var(--noir) 0 5%, #fff0 0 50%, var(--noir) 0 55%, var(--gris-mur-fonce) 0 100% ) var(--gp-ln), 
+		repeating-linear-gradient(90deg, var(--gris-mur) 0 47.5%, var(--noir) 0 50%, var(--gris-mur) 0 97.5%, var(--noir) 0 100% ) var(--gp-ln);
+    /*le code que j'ai pris en ligne finit ici*/
+}
+
+/*Chapitre 2*/
+
+/*Chapitre 3*/
+
+/*Chapitre 4*/
+
+/*Chapitre 5*/
+
+/*Chapitre 6*/
