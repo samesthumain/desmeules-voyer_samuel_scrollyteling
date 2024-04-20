@@ -11,11 +11,9 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
 //
 window.addEventListener("scroll", () => {
     body.classList.add("is-scrolling");
-    if(timer){
         clearTimeout(timer);
-    }
     let timer = setTimeout(function() {
         body.classList.remove("is-scrolling");
-      }, 1000);
+      }, 100);
 
 })
