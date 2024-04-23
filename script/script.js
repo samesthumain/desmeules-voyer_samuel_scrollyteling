@@ -24,10 +24,15 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
 //})
 
 gsap.to('#chapitre1', {
-    scrollTrigger: '#chapitre1',
-    opacity: '100%',
+    opacity: '0%',
     duration: 2,
+    scrollTrigger: {
+    pin:true,
+    markers:true,
+    start: '50 top',
+    end:'bottom bottom',
     trigger:'.background-chapitre-1',
+    }
   });
 
 //titres chapitre
