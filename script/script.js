@@ -23,15 +23,15 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
 
 //})
 
-gsap.to('#chapitre1', {
+gsap.to('.background-chapitre-1', {
     opacity: '0%',
     duration: 2,
     scrollTrigger: {
     pin:true,
     markers:true,
-    start: '50 top',
-    end:'bottom bottom',
-    trigger:'.background-chapitre-1',
+    start: '50 50',
+    end:'50 50',
+    trigger:'#chapitre1',
     }
   });
 
