@@ -23,24 +23,77 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
 
 //})
 
-gsap.to('.background-chapitre-1', {
-    opacity: '0%',
-    duration: 2,
+//gsap.to('#chapitre1', {
+    //opacity: '0%',
+    //duration: 2,
+    //scrollTrigger: {
+    //pin:true,
+    //markers:true,
+    //start: '50 50',
+    //end:'50 50',
+    //trigger:'#chapitre1',
+    //}
+  //});
+
+//chapitre 1
+/*gsap.timeline()
+    .to('#chapitre1', {
+    opacity: 1,
+    //duration: 2,
     scrollTrigger: {
     pin:true,
+    scrub:true,
     markers:true,
-    start: '50 50',
-    end:'50 50',
+    start: 'top top',
+    end:'bottom bottom',
     trigger:'#chapitre1',
     }
-  });
+});*/
 
-//titres chapitre
 gsap.timeline()
     .to(".num-chap-1", { duration: 1, text: 'Chapitre 1:', ease: "none", delay: 0.1 })
     .to(".nom-chap-1", { duration: 1, text: "Intrusion", ease: "none", delay: 0.1 })
+    .to(".num-chap-1", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
+    .to(".nom-chap-1", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".bnc1", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 
+//chapitre 2
 gsap.timeline()
     .to(".num-chap-2", { duration: 1, text: 'Chapitre 2:', ease: "none", delay: 0.1 })
     .to(".nom-chap-2", { duration: 1, text: "Monika", ease: "none", delay: 0.1 })
+    .to(".num-chap-2", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
+    .to(".nom-chap-2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
+//chapitre 3
+gsap.timeline()
+    .to(".num-chap-3", { duration: 1, text: 'Chapitre 3:', ease: "none", delay: 0.1 })
+    .to(".nom-chap-3", { duration: 1, text: "Emprisonnés", ease: "none", delay: 0.1 })
+    .to(".num-chap-3", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
+    .to(".nom-chap-3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".bnc3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
+//chapitre 4
+gsap.timeline()
+    .to(".num-chap-4", { duration: 1, text: 'Chapitre 4:', ease: "none", delay: 0.1 })
+    .to(".nom-chap-4", { duration: 1, text: "", ease: "none", delay: 0.1 })
+    .to(".num-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
+    .to(".nom-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".bnc4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
+//chapitre 5
+gsap.timeline()
+    .to(".num-chap-5", { duration: 1, text: 'Chapitre 5:', ease: "none", delay: 0.1 })
+    .to(".nom-chap-5", { duration: 1, text: "Avant le combat", ease: "none", delay: 0.1 })
+    .to(".num-chap-5", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
+    .to(".nom-chap-5", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".bnc5", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
+//chapitre 6
+gsap.timeline()
+    .to(".num-chap-6", { duration: 1, text: 'Chapitre 6:', ease: "none", delay: 0.1 })
+    .to(".nom-chap-6", { duration: 1, text: "Relius", ease: "none", delay: 0.1 })
+    .to(".num-chap-6", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
+    .to(".nom-chap-6", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".bnc6", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
