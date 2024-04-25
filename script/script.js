@@ -23,17 +23,18 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
 
 //})
 
-//gsap.to('#chapitre1', {
+/*gsap.to('#chapitre1', {
     //opacity: '0%',
     //duration: 2,
-    //scrollTrigger: {
-    //pin:true,
-    //markers:true,
-    //start: '50 50',
-    //end:'50 50',
-    //trigger:'#chapitre1',
-    //}
-  //});
+    scrollTrigger: {
+        scrub: true,
+        pin:true,
+        markers:true,
+        start: 'top',
+        end:'+=3000',
+        trigger:'#chapitre1',
+    }
+});*/
 
 //chapitre 1
 /*gsap.timeline()
@@ -50,8 +51,16 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
     }
 });*/
 
-gsap.timeline()
-    .to(".num-chap-1", { duration: 1, text: 'Chapitre 1:', ease: "none", delay: 0.1 })
+gsap.timeline({scrollTrigger: {
+    scrub: true,
+    pin:true,
+    markers:true,
+    start: 'center center',
+    end:'+=30000',
+    trigger:'#chapitre1',
+}})
+    //.to(".bnc", { duration: 1, opacity: 1, ease: "none", delay: 0.1 })
+    .to(".num-chap-1", { text: 'Chapitre 1:', ease: "none", delay: 0.1 })
     .to(".nom-chap-1", { duration: 1, text: "Intrusion", ease: "none", delay: 0.1 })
     .to(".num-chap-1", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
     .to(".nom-chap-1", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
