@@ -147,6 +147,7 @@ header {
 /*Styles dans le main*/
 
 section{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +186,8 @@ section{
     height: 100%;
     width: 100%;
     margin: 0%;
+    z-index: 2;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -238,7 +241,27 @@ section{
     /*le code que j'ai pris en ligne finit ici*/
 }
 
+.setting-ch1{
+    position: absolute;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+
+    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    
+    /*background-color: var(--blanc);*/
+}
+
 /*Chapitre 2*/
+
+.ch2-img{
+    height: 100%;
+    width: 100%;
+
+    background-color: hotpink;
+    opacity: 0;
+}
 
 /*Chapitre 3*/
 

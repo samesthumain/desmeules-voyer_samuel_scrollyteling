@@ -58,7 +58,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=30000',
+    end:'+=3000',
     trigger:'#chapitre1',
 }})
     //.to(".bnc", { duration: 1, opacity: 1, ease: "none", delay: 0.1 })
@@ -75,9 +75,10 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=30000',
+    end:'+=3000',
     trigger:'#chapitre2',
 }})
+    .to(".ch2-img1", { duration: 1.5, opacity: 1, ease: "none"})
     .to(".num-chap-2", { duration: 1, text: 'Chapitre 2:', ease: "none", delay: 0.1 })
     .to(".nom-chap-2", { duration: 1, text: "Monika", ease: "none", delay: 0.1 })
     .to(".num-chap-2", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
