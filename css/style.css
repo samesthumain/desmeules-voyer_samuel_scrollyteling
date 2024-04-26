@@ -67,6 +67,13 @@ p,
     color: var(--blanc);
 }
 
+.dialog-jeremiah{
+    color: #9f8afd;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    /*text-decoration-style: double;*/
+}
+
 /*Styles généraux*/
 
 body{
@@ -162,9 +169,12 @@ section{
 }
 
 .scene{
+    position: relative;
     /*height: 1080px;
     width: 1920px;*/
     aspect-ratio: 16/9;
+
+    box-shadow: 0 0 10px 1px var(--noir);
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
@@ -223,6 +233,13 @@ section{
     z-index: 3;
 }
 
+.dialog{
+    margin: 0%;
+    padding: 0%;
+    border: 0;
+    position: absolute;
+}
+
 /*Chapitre 1*/
 
 .ch1 {
@@ -251,6 +268,11 @@ section{
     /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
     
     /*background-color: var(--blanc);*/
+}
+
+.ch1-line1{
+    left: 17%;
+    top: 50%;
 }
 
 /*Chapitre 2*/
