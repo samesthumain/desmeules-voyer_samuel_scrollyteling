@@ -417,6 +417,9 @@ section {
 
 .ans-19 {
     position: absolute;
+
+    left: 50%;
+    top: 50%;
     
     z-index: 8;
 }

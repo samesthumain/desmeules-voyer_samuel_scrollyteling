@@ -126,10 +126,13 @@ gsap.timeline({scrollTrigger: {
     .to(".nom-chap-2", { duration: 1, text: "Monika", ease: "none", delay: 0.1 })
     .to(".num-chap-2", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
     .to(".nom-chap-2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
+    //.to(".ans-19", { duration: 1.5, text: "19 ans plus tôt", ease: "none", delay: -1.5 })
+
     .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 
-    .to(".ans-19", { duration: 1, text: "19 ans plus tôt", ease: "none" })
+    .to(".ans-19", { tramsformOrigin: '50% 50%', duration: 1, text: "19 ans plus tôt", ease: "none" })
 
 
 
@@ -152,7 +155,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=30000',
+    end:'+=3000',
     trigger:'#chapitre3',
 }})
     .to(".num-chap-3", { duration: 1, text: 'Chapitre 3:', ease: "none", delay: 0.1 })
@@ -167,7 +170,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=30000',
+    end:'+=3000',
     trigger:'#chapitre4',
 }})
     .to(".num-chap-4", { duration: 1, text: 'Chapitre 4:', ease: "none", delay: 0.1 })
@@ -182,7 +185,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=30000',
+    end:'+=3000',
     trigger:'#chapitre5',
 }})
     .to(".num-chap-5", { duration: 1, text: 'Chapitre 5:', ease: "none", delay: 0.1 })
@@ -197,7 +200,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=30000',
+    end:'+=3000',
     trigger:'#chapitre6',
 }})
     .to(".num-chap-6", { duration: 1, text: 'Chapitre 6:', ease: "none", delay: 0.1 })
