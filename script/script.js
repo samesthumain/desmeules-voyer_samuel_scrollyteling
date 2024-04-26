@@ -36,7 +36,7 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
     }
 });*/
 
-//chapitre 1
+
 /*gsap.timeline()
     .to('#chapitre1', {
     opacity: 1,
@@ -51,6 +51,8 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
     }
 });*/
 
+
+//chapitre 1
 gsap.timeline({scrollTrigger: {
     scrub: true,
     pin:true,
@@ -68,7 +70,14 @@ gsap.timeline({scrollTrigger: {
 
 
 //chapitre 2
-gsap.timeline()
+gsap.timeline({scrollTrigger: {
+    scrub: true,
+    pin:true,
+    markers:true,
+    start: 'center center',
+    end:'+=30000',
+    trigger:'#chapitre2',
+}})
     .to(".num-chap-2", { duration: 1, text: 'Chapitre 2:', ease: "none", delay: 0.1 })
     .to(".nom-chap-2", { duration: 1, text: "Monika", ease: "none", delay: 0.1 })
     .to(".num-chap-2", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
@@ -76,7 +85,14 @@ gsap.timeline()
     .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 //chapitre 3
-gsap.timeline()
+gsap.timeline({scrollTrigger: {
+    scrub: true,
+    pin:true,
+    markers:true,
+    start: 'center center',
+    end:'+=30000',
+    trigger:'#chapitre3',
+}})
     .to(".num-chap-3", { duration: 1, text: 'Chapitre 3:', ease: "none", delay: 0.1 })
     .to(".nom-chap-3", { duration: 1, text: "Emprisonnés", ease: "none", delay: 0.1 })
     .to(".num-chap-3", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
@@ -84,7 +100,14 @@ gsap.timeline()
     .to(".bnc3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 //chapitre 4
-gsap.timeline()
+gsap.timeline({scrollTrigger: {
+    scrub: true,
+    pin:true,
+    markers:true,
+    start: 'center center',
+    end:'+=30000',
+    trigger:'#chapitre4',
+}})
     .to(".num-chap-4", { duration: 1, text: 'Chapitre 4:', ease: "none", delay: 0.1 })
     .to(".nom-chap-4", { duration: 1, text: "", ease: "none", delay: 0.1 })
     .to(".num-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
@@ -92,7 +115,14 @@ gsap.timeline()
     .to(".bnc4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 //chapitre 5
-gsap.timeline()
+gsap.timeline({scrollTrigger: {
+    scrub: true,
+    pin:true,
+    markers:true,
+    start: 'center center',
+    end:'+=30000',
+    trigger:'#chapitre5',
+}})
     .to(".num-chap-5", { duration: 1, text: 'Chapitre 5:', ease: "none", delay: 0.1 })
     .to(".nom-chap-5", { duration: 1, text: "Avant le combat", ease: "none", delay: 0.1 })
     .to(".num-chap-5", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
@@ -100,7 +130,14 @@ gsap.timeline()
     .to(".bnc5", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 //chapitre 6
-gsap.timeline()
+gsap.timeline({scrollTrigger: {
+    scrub: true,
+    pin:true,
+    markers:true,
+    start: 'center center',
+    end:'+=30000',
+    trigger:'#chapitre6',
+}})
     .to(".num-chap-6", { duration: 1, text: 'Chapitre 6:', ease: "none", delay: 0.1 })
     .to(".nom-chap-6", { duration: 1, text: "Relius", ease: "none", delay: 0.1 })
     .to(".num-chap-6", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
