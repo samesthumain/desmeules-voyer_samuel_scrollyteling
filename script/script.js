@@ -72,6 +72,9 @@ gsap.timeline({scrollTrigger: {
     //sprite cours
     .from(".ss-j-ch1", { x: "800%", ease: "power1.out", })
 
+    .to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
+    .to(".jeremiah-idle", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
     //paroles
     .to(".ch1-line1", { text: "Ici Jeremiah,", ease: "none", delay: 0.1 })
     .to(".ch1-line2", { text: "23ieme escouade de reconnaissance", ease: "none" })
@@ -94,6 +97,9 @@ gsap.timeline({scrollTrigger: {
     .to(".ch1-line1", { duration: 0, text: "", ease: "none", delay: 0.1 })
     .to(".ch1-line3", { duration: 0, text: "", ease: "none" })
 
+    .to(".jeremiah-idle", { duration: 0, opacity: 0, ease: "none", })
+    .to(".jeremiah-pret", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
     //robots
     .from(".ss-robot-1", { x: "800%", ease: "power1.out", })
     .from(".ss-robot-2", { x: "800%", ease: "power1.out", delay: -0.49 })
@@ -108,7 +114,10 @@ gsap.timeline({scrollTrigger: {
     .to(".ss-m-ch1", { x: "500%", ease: "none", delay: 0.2 })
     .from(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.5 })
     .from(".marco-saut", { duration: 0, opacity: 1, ease: "none", })
-    
+
+
+    .to(".ss-robot-2", { x: "800%", ease: "power1.out", })
+    .to(".ss-m-ch1", { x: "900%", ease: "power1.out", delay: -0.5 })
 
 
 
