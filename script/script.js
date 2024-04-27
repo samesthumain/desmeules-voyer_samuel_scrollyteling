@@ -105,6 +105,9 @@ gsap.timeline({scrollTrigger: {
     .from(".ss-robot-2", { x: "800%", ease: "power1.out", delay: -0.49 })
     .from(".ss-robot-3", { x: "800%", ease: "power1.out", delay: -0.48 })
 
+    .to(".robot-course", { duration: 0, opacity: 0, ease: "none", })
+    .to(".robot-idle", { duration: 0, opacity: 1, ease: "none", })
+
     //entre en scene marco
     .from(".ss-m-ch1", { x: "-800%", ease: "none", })
 
