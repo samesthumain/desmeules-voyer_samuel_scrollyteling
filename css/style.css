@@ -103,6 +103,17 @@ body.is-scrolling .spriteSheet {
     position: absolute;
 }
 
+.spritesheet-dice{
+    position: absolute;
+    background-image: url("/img/img_elements_visuels/spritesheet_dice.png");
+    background-repeat: no-repeat;
+
+    animation-name: dice;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}
+
 /*Styles dans le header*/
 
 header {
@@ -303,13 +314,19 @@ section {
 
 .ss-j-ch1 {
     height: 20%;
-    width: 11.3%;
+    /*width: 11.3%;*/
+    aspect-ratio: 1/1;
 
     left: 10%;
     bottom: 16%;
 
     background-color: var(--blanc);
     z-index: 2;
+}
+
+.ss-dice{
+    width: 10%;
+    height: 10%;
 }
 
 .ss-m-ch1 {
