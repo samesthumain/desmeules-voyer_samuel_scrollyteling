@@ -424,10 +424,37 @@ section {
     height: 20%;
     width: 11.3%;
 
-    background-image: url("/img/img_elements_visuels/robots/robot_idle.png");
-    background-size: cover;
+    
+    
     /*background-color: var(--blanc);*/
     z-index: 2;
+}
+
+.robot-course{
+    background-image: url("/img/img_elements_visuels/robots/spritesheet_robot_course.png");
+
+    background-size: 800%;
+
+    animation-name: course-jeremiah;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: steps(8);
+    
+}
+
+.robot-idle{
+    background-image: url("/img/img_elements_visuels/robots/robot_idle.png");
+    background-size: cover;
+    opacity: 0;
+}
+
+.robot-shoot{
+    opacity: 0;
+}
+
+.robot-revole{
+    opacity: 0;
 }
 
 .ss-robot-1 {

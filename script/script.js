@@ -141,7 +141,7 @@ gsap.timeline({scrollTrigger: {
     .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 
-    .to(".ans-19", { tramsformOrigin: '50% 50%', duration: 1, text: "19 ans plus tôt", ease: "none" })
+    .to(".ans-19", { transformOrigin: '50% 50%', duration: 1, text: "19 ans plus tôt", ease: "none" })
 
 
 
