@@ -89,15 +89,15 @@ body {
     aspect-ratio: 1/1;
     /*background-repeat: no-repeat;*/
 
-    background-image: url("/img/img_elements_visuels/spritesheet_dice.png");
+    background-image: url("/img/img_elements_visuels/jeremiah/spritesheet_jeremiah_course.png");
 
-    background-size: 400%;
+    background-size: 800%;
 
     animation-name: spriteSheet;
-    animation-duration: 0.1s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 
-    animation-timing-function: steps(4);
+    animation-timing-function: steps(8);
 
     /*animation-play-state: paused;*/
 }
@@ -108,7 +108,7 @@ body {
     }
 
     to {
-        background-position: -400% 0;
+        background-position: -800% 0;
     }
 }
 
@@ -119,6 +119,18 @@ body.is-scrolling .spriteSheet {
 
 .spritesheet-jeremiah {
     position: absolute;
+
+    
+}
+
+@keyframes course-jeremiah {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -800% 0;
+    }
 }
 
 .spritesheet-marco {
@@ -353,8 +365,19 @@ section {
     left: 10%;
     bottom: 15%;
 
-    background-color: var(--blanc);
     z-index: 2;
+}
+
+.jeremiah-course{
+    background-image: url("/img/img_elements_visuels/jeremiah/spritesheet_jeremiah_course.png");
+
+    background-size: 800%;
+
+    animation-name: course-jeremiah;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: steps(8);
 }
 
 .jeremiah-pret{
