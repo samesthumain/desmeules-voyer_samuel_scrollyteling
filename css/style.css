@@ -239,6 +239,8 @@ section {
     aspect-ratio: 16/9;
 
     box-shadow: 0 0 10px 1px var(--noir);
+
+    overflow: hidden;
 }
 
 @media screen and (max-aspect-ratio: 16/9) {
@@ -496,6 +498,11 @@ section {
 
     
     z-index: 4;
+}
+
+.tire-robot{
+    background-color: red;
+    opacity: 0;
 }
 
 /*Chapitre 2*/

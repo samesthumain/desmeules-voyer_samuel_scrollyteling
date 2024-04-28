@@ -128,6 +128,22 @@ gsap.timeline({scrollTrigger: {
     .to(".ss-dice-ch1", { x: "-19000%", ease: "none", })
     .to(".ss-robot-1", { x: "800%", ease: "power1.out", delay: -0.4 })
 
+    .to(".jeremiah-dice", { duration: 0, opacity: 0, ease: "none", })
+    .to(".jeremiah-course", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
+    .to(".ss-j-ch1", { duration: 0.2, x: "170%", ease: "none", })
+
+    .to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
+    .to(".jeremiah-dice", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".ss-dice-ch1", { x: "0%", ease: "none", })
+
+    .to(".jeremiah-dice", { duration: 0, opacity: 0, ease: "none", })
+    .to(".jeremiah-pret", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".robot-idle-3", { duration: 0, opacity: 0, ease: "none", delay: 0.1 })
+    .to(".robot-shoot", { duration: 0, opacity: 1, ease: "none", })
+
 
 
 //chapitre 2
