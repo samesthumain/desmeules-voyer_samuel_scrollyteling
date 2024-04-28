@@ -385,6 +385,11 @@ section {
     background-size: cover;
 }
 
+.jeremiah-dice{
+    background-image: url(/img/img_elements_visuels/jeremiah/jeremiah_dice.png);
+    background-size: cover;
+}
+
 .ss-dice-ch1 {
     width: 13%;
     aspect-ratio: 1/1;
@@ -392,7 +397,7 @@ section {
     left: 8%;
     top: 28%;
 
-    z-index: 5;
+    z-index: 7;
 }
 
 .ss-m-ch1 {

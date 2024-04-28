@@ -122,6 +122,12 @@ gsap.timeline({scrollTrigger: {
     .to(".ss-robot-2", { x: "800%", ease: "power1.out", })
     .to(".ss-m-ch1", { x: "900%", ease: "power1.out", delay: -0.5 })
 
+    .to(".jeremiah-pret", { duration: 0, opacity: 0, ease: "none", })
+    .to(".jeremiah-dice", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
+    .to(".ss-dice-ch1", { x: "-19000%", ease: "none", })
+    .to(".ss-robot-1", { x: "800%", ease: "power1.out", delay: -0.4 })
+
 
 
 //chapitre 2
@@ -186,7 +192,7 @@ gsap.timeline({scrollTrigger: {
     trigger:'#chapitre4',
 }})
     .to(".num-chap-4", { duration: 1, text: 'Chapitre 4:', ease: "none", delay: 0.1 })
-    .to(".nom-chap-4", { duration: 1, text: "", ease: "none", delay: 0.1 })
+    .to(".nom-chap-4", { duration: 1, text: "L'armurie", ease: "none", delay: 0.1 })
     .to(".num-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
     .to(".nom-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
