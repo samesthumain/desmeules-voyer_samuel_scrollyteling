@@ -109,6 +109,7 @@ gsap.timeline({scrollTrigger: {
     .to(".robot-idle", { duration: 0, opacity: 1, ease: "none", })
 
     //entre en scene marco
+    .from(".ss-m-ch1", { duration: 0, scaleX: -1, ease: "none", })
     .from(".ss-m-ch1", { x: "-800%", ease: "none", })
 
     .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
@@ -118,6 +119,8 @@ gsap.timeline({scrollTrigger: {
     .from(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.5 })
     .from(".marco-saut", { duration: 0, opacity: 1, ease: "none", })
 
+    .to(".robot-idle-2", { duration: 0, opacity: 0, ease: "none" })
+    .to(".robot-revole-2", { duration: 0, opacity: 1, ease: "none", })
 
     .to(".ss-robot-2", { x: "800%", ease: "power1.out", })
     .to(".ss-m-ch1", { x: "900%", ease: "power1.out", delay: -0.5 })
@@ -126,6 +129,10 @@ gsap.timeline({scrollTrigger: {
     .to(".jeremiah-dice", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
 
     .to(".ss-dice-ch1", { x: "-19000%", ease: "none", })
+
+    .to(".robot-idle-1", { duration: 0, opacity: 0, ease: "none", delay: -0.4})
+    .to(".robot-revole-1", { duration: 0, opacity: 1, ease: "none", delay: -0.4 })
+
     .to(".ss-robot-1", { x: "800%", ease: "power1.out", delay: -0.4 })
 
     .to(".jeremiah-dice", { duration: 0, opacity: 0, ease: "none", })
@@ -144,6 +151,53 @@ gsap.timeline({scrollTrigger: {
     .to(".robot-idle-3", { duration: 0, opacity: 0, ease: "none", delay: 0.1 })
     .to(".robot-shoot", { duration: 0, opacity: 1, ease: "none", })
 
+    //tire
+    .to(".tire-robot", { duration: 0, opacity: 1, ease: "none", })
+    .to(".tire-robot", { duration: 0.2, x: "-2400%", y: "-600%", ease: "none", })
+    .to(".tire-robot", { duration: 0, opacity: 0, ease: "none", })
+
+
+    .to(".jeremiah-pret", { duration: 0, opacity: 0, ease: "none", delay: -0.1 })
+    .to(".jeremiah-course", { duration: 0, scaleX: 1, opacity: 1, ease: "none", delay: -0.1 })
+
+    .to(".ss-j-ch1", { duration: 0.2, x: "100%", y: "50%", ease: "none", delay: -0.1 })
+
+    .to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
+    .to(".jeremiah-idle", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
+    .to(".robot-shoot", { duration: 0, opacity: 0, ease: "none" })
+    .to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none" })
+    .to(".ss-robot-3", { duration: 0, scaleX: -1, ease: "none", })
+
+    .to(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", })
+    .to(".ss-m-ch1", { duration: 0, scaleX: 1, ease: "none", })
+    .to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".ss-m-ch1", { duration: 0, y: "35%", ease: "none", })
+    .to(".ss-m-ch1", { x: "600%", ease: "none", })
+
+    .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
+    .to(".marco-tackle", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".ss-m-ch1", { duration: 0.2, x: "550%", ease: "none", })
+
+    .to(".robot-idle-3", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    .to(".robot-revole-3", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
+
+    .to(".ss-robot-3", { x: "-250%", ease: "none", delay: -0.2 })
+
+    .to(".marco-tackle", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    .to(".marco-course", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
+
+    .to(".ss-m-ch1", { x: "450%", ease: "none", delay: -0.2 })
+
+    .to(".ss-robot-3", { rotate: "-80%", y: "30%", ease: "none", delay: -0.8 })
+
+    .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
+    .to(".marco-idle", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".robot-revole-3", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    .to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
 
 
 //chapitre 2
@@ -204,14 +258,25 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=3000',
+    end:'+=30000',
     trigger:'#chapitre4',
 }})
+
+    .to(".marco-idle", { duration: 0, opacity: 0, ease: "none", })
+    .to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
+    .to(".jeremiah-course", { duration: 0, opacity: 1, ease: "none", })
+    .to(".ss-mar-ch4", { x: "-300%", duration: 0, scaleX: -1, ease: "none", })
+    .to(".ss-j-ch4", { x: "-300%", duration: 0, scaleX: -1, ease: "none", })
+
     .to(".num-chap-4", { duration: 1, text: 'Chapitre 4:', ease: "none", delay: 0.1 })
     .to(".nom-chap-4", { duration: 1, text: "L'armurie", ease: "none", delay: 0.1 })
     .to(".num-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
     .to(".nom-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
+    .to(".ss-mar-ch4", { x: "800%", ease: "none" })
+    .to(".ss-mon-ch4", { x: "800%", ease: "none", delay: -0.5 })
+    .to(".ss-j-ch4", { x: "800%", ease: "none", delay: -0.5 })
 
 //chapitre 5
 gsap.timeline({scrollTrigger: {
@@ -237,6 +302,8 @@ gsap.timeline({scrollTrigger: {
     end:'+=3000',
     trigger:'#chapitre6',
 }})
+    .to(".ch6-img2", { duration: 0, opacity: 1, ease: "none" })
+
     .to(".num-chap-6", { duration: 1, text: 'Chapitre 6:', ease: "none", delay: 0.1 })
     .to(".nom-chap-6", { duration: 1, text: "Relius", ease: "none", delay: 0.1 })
     .to(".num-chap-6", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
