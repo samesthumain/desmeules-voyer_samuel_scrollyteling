@@ -115,9 +115,14 @@ gsap.timeline({scrollTrigger: {
     .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
     .to(".marco-pre-saut", { duration: 0, opacity: 1, ease: "none", })
 
-    .to(".ss-m-ch1", { x: "500%", ease: "none", delay: 0.2 })
-    .from(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.5 })
-    .from(".marco-saut", { duration: 0, opacity: 1, ease: "none", })
+    .to(".ss-m-ch1", { x: "500%", y: "-50%", ease: "none", delay: 0.2 })
+    .to(".ss-m-ch1", {duration: 0.2, y: "-20%", ease: "none", delay: -0.2 })
+    //.to(".ss-m-ch1", { y: "-10%", ease: "none", delay: 0.1 })
+    .to(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.5 })
+    .to(".marco-saut", { duration: 0, opacity: 1, ease: "none", delay: -0.5 })
+
+    .to(".marco-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    .to(".marco-kick", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
 
     .to(".robot-idle-2", { duration: 0, opacity: 0, ease: "none" })
     .to(".robot-revole-2", { duration: 0, opacity: 1, ease: "none", })
@@ -169,7 +174,7 @@ gsap.timeline({scrollTrigger: {
     .to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none" })
     .to(".ss-robot-3", { duration: 0, scaleX: -1, ease: "none", })
 
-    .to(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", })
+    .to(".marco-post-saut", { duration: 0, opacity: 0, ease: "none", })
     .to(".ss-m-ch1", { duration: 0, scaleX: 1, ease: "none", })
     .to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
 

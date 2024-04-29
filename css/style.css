@@ -139,6 +139,14 @@ body.is-scrolling .spriteSheet {
     position: absolute;
 }
 
+.spritesheet-monika {
+    position: absolute;
+}
+
+.spritesheet-gorilla {
+    position: absolute;
+}
+
 .spritesheet-dice {
     position: absolute;
     background-image: url("/img/img_elements_visuels/spritesheet_dice.png");
@@ -419,6 +427,16 @@ section {
 
 .marco-idle{
     background-image: url("/img/img_elements_visuels/marco/marco_idle.png");
+    background-size: cover;
+}
+
+.marco-pre-saut{
+    background-image: url("/img/img_elements_visuels/marco/marco_pre_saut.png");
+    background-size: cover;
+}
+
+.marco-saut{
+    background-image: url("/img/img_elements_visuels/marco/marco_saute.png");
     background-size: cover;
 }
 
