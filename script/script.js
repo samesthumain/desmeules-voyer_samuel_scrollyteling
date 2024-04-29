@@ -174,7 +174,7 @@ gsap.timeline({scrollTrigger: {
     .to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none" })
     .to(".ss-robot-3", { duration: 0, scaleX: -1, ease: "none", })
 
-    .to(".marco-post-saut", { duration: 0, opacity: 0, ease: "none", })
+    .to(".marco-kick", { duration: 0, opacity: 0, ease: "none", })
     .to(".ss-m-ch1", { duration: 0, scaleX: 1, ease: "none", })
     .to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
 
@@ -263,7 +263,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=30000',
+    end:'+=3000',
     trigger:'#chapitre4',
 }})
 
@@ -280,7 +280,7 @@ gsap.timeline({scrollTrigger: {
     .to(".bnc4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
     .to(".ss-mar-ch4", { x: "800%", ease: "none" })
-    .to(".ss-mon-ch4", { x: "800%", ease: "none", delay: -0.5 })
+    //.to(".ss-mon-ch4", { x: "800%", ease: "none", delay: -0.5 })
     .to(".ss-j-ch4", { x: "800%", ease: "none", delay: -0.5 })
 
 //chapitre 5
