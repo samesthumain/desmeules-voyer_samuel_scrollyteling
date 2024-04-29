@@ -24,7 +24,7 @@
 h1,
 .h1 {
 
-    font-size: 300%;
+    font-size: 400%;
     color: var(--blanc);
 
     font-family: "Big Shoulders Stencil Text";
@@ -32,18 +32,18 @@ h1,
     text-align: center;
     top: 50%;
 
-    margin: 0%;
+    
 }
 
 h2,
 .h2 {
-    font-size: 100%;
+    font-size: 200%;
     color: var(--blanc);
 }
 
 h3,
 .h3 {
-    font-size: 90%;
+    font-size: 180%;
     color: var(--noir);
 }
 
@@ -103,7 +103,7 @@ body {
 
     animation-timing-function: steps(3);
 
-    /*animation-play-state: paused;*/
+    animation-play-state: paused;
 }
 
 @keyframes spriteSheet {
@@ -120,6 +120,10 @@ body.is-scrolling .spriteSheet {
     animation-play-state: running;
     background-color: hotpink;
 }
+
+/*body.is-scrolling .marco-course, body.is-scrolling .jeremiah-course{
+    animation-play-state: running;
+}*/
 
 .spritesheet-jeremiah {
     position: absolute;
