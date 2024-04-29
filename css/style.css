@@ -7,6 +7,16 @@
 
     --rouge: #ff0000;
 
+    --mauve: #9f8afd;
+    /*
+    --vert: ;
+    --vin: ;
+    */
+    
+    --brun: #a69a64;
+
+    --grass: #317a22;
+
     --gris-mur: #597081;
     --gris-mur-fonce: #4d6170;
 
@@ -72,7 +82,28 @@ p,
 }
 
 .dialog-jeremiah {
-    color: #9f8afd;
+    color: var(--mauve);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    /*text-decoration-style: double;*/
+}
+
+.dialog-marco {
+    color: var(--vert);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    /*text-decoration-style: double;*/
+}
+
+.dialog-monika {
+    color: var(--vin);
+    text-decoration: underline;
+    text-decoration-style: double;
+    /*text-decoration-style: double;*/
+}
+
+.dialog-guard {
+    color: var(--brun);
     text-decoration: underline;
     text-decoration-style: dotted;
     /*text-decoration-style: double;*/
@@ -381,11 +412,53 @@ section {
     left: 17%;
     top: 54%;
 }
+
+.ch1-line4{
+    left: 35%;
+    top: 54%;
+}
+
+.ch1-line5{
+    left: 35%;
+    top: 60%;
+}
+
+.ch1-line6{
+    margin: 0% 10%;
+}
+
+
 .setting-ch1 {
     position: absolute;
     left: 0;
     height: auto;
     width: 100%;
+    z-index: 1;
+
+    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+
+    /*background-color: var(--blanc);*/
+}
+
+.bg-noir-ch1 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+
+    background-color: var(--noir);
+}
+
+.setting-ch1-fin {
+    opacity: 0;
     z-index: 1;
 
     /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
@@ -648,6 +721,10 @@ section {
 }
 
 /*Chapitre 3*/
+
+.ch3{
+    background-color: var(--grass);
+}
 
 .setting-ch3 {
     position: absolute;

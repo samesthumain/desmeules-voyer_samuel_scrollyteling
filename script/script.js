@@ -161,6 +161,9 @@ gsap.timeline({scrollTrigger: {
     .to(".tire-robot", { duration: 0.2, x: "-2400%", y: "-600%", ease: "none", })
     .to(".tire-robot", { duration: 0, opacity: 0, ease: "none", })
 
+    .to(".setting-ch1-debut", { duration: 0, opacity: 0, ease: "none", })
+    .to(".setting-ch1-fin", { duration: 0, opacity: 1, ease: "none", })
+
 
     .to(".jeremiah-pret", { duration: 0, opacity: 0, ease: "none", delay: -0.1 })
     .to(".jeremiah-course", { duration: 0, scaleX: 1, opacity: 1, ease: "none", delay: -0.1 })
@@ -203,6 +206,14 @@ gsap.timeline({scrollTrigger: {
 
     .to(".robot-revole-3", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
     .to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
+
+    .to(".ch1-line4", { text: "Des intrus ont détruit la porte!", ease: "none", delay: 0.1 })
+    .to(".ch1-line5", { text: "Gardes, attrapez-les!", ease: "none" })
+
+    .to(".bg-noir-ch1", { opacity: 1, ease: "none"})
+
+    .to(".ch1-line6", { text: "Jeremiah et son mystérieux sauveur furent capturés par les habitants de Vault Blank", ease: "none", delay: 0.1 })
+    //.to(".ch1-line5", { text: "Gardes, attrapez-les!", ease: "none" })
 
 
 //chapitre 2
