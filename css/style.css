@@ -159,6 +159,7 @@ body.is-scrolling .spriteSheet {
 .spritesheet-jeremiah {
     position: absolute;
 
+    opacity: 0;
     
 }
 
@@ -481,9 +482,11 @@ section {
     bottom: 15%;
 
     z-index: 2;
+
+    opacity: 0;
 }
 
-.jeremiah-course{
+.spritesheet-jeremiah.jeremiah-course{
     background-image: url("/img/img_elements_visuels/jeremiah/spritesheet_jeremiah_course.png");
 
     background-size: 800%;
@@ -493,6 +496,12 @@ section {
     animation-iteration-count: infinite;
 
     animation-timing-function: steps(8);
+
+    opacity: 0;
+}
+
+.spritesheet-jeremiah.ss-j-ch1.jeremiah-course{
+    opacity: 0;
 }
 
 .jeremiah-pret{
@@ -525,6 +534,7 @@ section {
     animation-iteration-count: infinite;
 
     animation-timing-function: steps(8);
+    opacity: 0;
 }
 
 .marco-idle{
@@ -563,7 +573,7 @@ section {
 }
 
 
-
+.marco-course,
 .marco-pre-saut,
 .marco-saut,
 .marco-post-saut,
@@ -732,6 +742,14 @@ section {
     height: 100%;
     width: 100%;
     z-index: 1;
+
+    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+
+    /*background-color: var(--blanc);*/
+}
+
+.setting-ch3-fin {
+    opacity: 0;
 
     /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
 

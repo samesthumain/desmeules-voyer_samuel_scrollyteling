@@ -268,6 +268,9 @@ gsap.timeline({scrollTrigger: {
     .to(".nom-chap-3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
+    .to(".setting-ch3-debut", { duration: 0, opacity: 0, ease: "none", delay: 1 })
+    .to(".setting-ch3-fin", { duration: 0, opacity: 1, ease: "none", })
+
 //chapitre 4
 gsap.timeline({scrollTrigger: {
     scrub: true,
