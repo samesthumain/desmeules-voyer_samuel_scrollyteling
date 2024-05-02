@@ -183,6 +183,7 @@ body.is-scrolling .spriteSheet {
 
 .spritesheet-gorilla {
     position: absolute;
+    background-size: cover;
 }
 
 .spritesheet-dice {
@@ -206,8 +207,19 @@ body.is-scrolling .spriteSheet {
         background-position: -400% 0;
     }
 }
+.gorilla-burst{
+    background-image: url("/img/img_elements_visuels/gorilla/gorilla_burst.png");
+}
 
-/*code pour l remise*/
+.gorilla-idle{
+    background-image: url("/img/img_elements_visuels/gorilla/gorilla_idle.png");
+}
+
+.gorilla-float{
+    background-image: url("/img/img_elements_visuels/gorilla/gorilla_floating.png");
+}
+
+/*code pour la remise*/
 
 ul.technique-gsap{
     background: rgba(0,0,0,0.3);
@@ -766,20 +778,71 @@ section {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 
     background-image: url("/img/img_arriere_plan/parallax/parallax_lvl1.png");
-    background-size: 10% 100%;
+    background-size: 100% 100%;
 
-    /*animation-name: lvl1;
+    animation-name: lvl1;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-
-    */
-    background-color: var(--blanc);
 }
 
 @keyframes lvl1 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1000% 0;
+    }
+}
+
+.parallax-ch4-lvl2{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+    background-image: url("/img/img_arriere_plan/parallax/parallax_lvl2.png");
+    background-size: 100% 100%;
+
+    background-position: 50%;
+
+    background-repeat: repeat;
+
+    animation-name: lvl2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*@keyframes lvl2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1000% 0;
+    }
+}*/
+
+.parallax-ch4-lvl3{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    background-image: url("/img/img_arriere_plan/parallax/parallax_lvl3.png");
+    background-size: 100% 100%;
+
+    animation-name: lvl3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lvl3 {
     from {
         background-position: 0 0;
     }
@@ -795,6 +858,7 @@ section {
     height: 100%;
     width: 100%;
     z-index: 1;
+    opacity: 0;
 }
 
 .setting-ch4-glass{
@@ -802,9 +866,6 @@ section {
     height: 100%;
     width: 100%;
     z-index: 4;
-}
-
-.setting-ch4-glass-fin{
     opacity: 0;
 }
 
@@ -815,7 +876,7 @@ section {
     left: 10%;
     bottom: 9%;
 
-    z-index: 2;
+    z-index: 5;
 }
 
 .ss-j-ch4 {
@@ -825,7 +886,7 @@ section {
     left: 3%;
     bottom: 6%;
 
-    z-index: 3;
+    z-index: 6;
 }
 
 .ss-mon-ch4 {
@@ -835,7 +896,7 @@ section {
     left: 3%;
     bottom: 9%;
 
-    z-index: 2;
+    z-index: 5;
 
     background-color: var(--blanc);
 }

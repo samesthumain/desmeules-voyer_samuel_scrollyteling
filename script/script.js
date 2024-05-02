@@ -297,9 +297,11 @@ gsap.timeline({scrollTrigger: {
     //.to(".ss-mon-ch4", { x: "800%", ease: "none", delay: -0.5 })
     .to(".ss-j-ch4", { x: "800%", ease: "none", delay: -0.5 })
 
+    .to(".setting-ch4", { duration: 1.5, opacity: 1, ease: "none" })
+    .to(".setting-ch4-glass-debut", { duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
     .to(".parallax-ch4-lvl1", { duration: 1.5, opacity: 0, ease: "none" })
-    .to(".parallax-ch4-lvl2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
-    .to(".parallax-ch4-lvl3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    //.to(".parallax-ch4-lvl2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    //.to(".parallax-ch4-lvl3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
 //chapitre 5
 gsap.timeline({scrollTrigger: {
