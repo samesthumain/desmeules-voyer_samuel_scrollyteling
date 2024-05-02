@@ -56,7 +56,7 @@ gsap.fromTo('.vaisseau', {x: "0%", y: "200%", scale: 1.5}, {x: "700%", y: "-100%
 gsap.timeline({scrollTrigger: {
     scrub: true,
     pin:true,
-    markers:true,
+    //markers:true,
     start: 'center center',
     end:'+=30000',
     trigger:'#chapitre1',
@@ -293,15 +293,22 @@ gsap.timeline({scrollTrigger: {
     .to(".nom-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
-    .to(".ss-mar-ch4", { x: "800%", ease: "none" })
+    .to(".ss-mar-ch4", { x: "900%", ease: "none" })
     //.to(".ss-mon-ch4", { x: "800%", ease: "none", delay: -0.5 })
-    .to(".ss-j-ch4", { x: "800%", ease: "none", delay: -0.5 })
+    .to(".ss-j-ch4", { x: "900%", ease: "none", delay: -0.5 })
 
     .to(".setting-ch4", { duration: 1.5, opacity: 1, ease: "none" })
     .to(".setting-ch4-glass-debut", { duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
+    
     .to(".parallax-ch4-lvl1", { duration: 1.5, opacity: 0, ease: "none" })
-    //.to(".parallax-ch4-lvl2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
-    //.to(".parallax-ch4-lvl3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".parallax-ch4-lvl2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".parallax-ch4-lvl3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".hourglass", { transformOrigin: "50% 50%", duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
+    .to(".gorilla-float", { duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
+
+
+    gsap.to('.hourglass', { duration: 1.5, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { markers:true, start: 'center center', end:'center center', trigger:'#chapitre4', } } );
+    gsap.to('.gorilla-float', { duration: 1.5, repeat: -1, yoyo: true, y: "5%", ease: "power1.inOut", scrollTrigger: { markers:true, start: 'center center', end:'center center', trigger:'#chapitre4', } } );
 
 //chapitre 5
 gsap.timeline({scrollTrigger: {
@@ -312,6 +319,10 @@ gsap.timeline({scrollTrigger: {
     end:'+=3000',
     trigger:'#chapitre5',
 }})
+    .to(".marco-idle", { duration: 0, opacity: 1, ease: "none"})
+    .to(".jeremiah-assis", { duration: 0, opacity: 1, ease: "none"})
+    .to(".gorilla-assis", { duration: 0, opacity: 1, scaleX: -1, ease: "none"})
+
     .to(".num-chap-5", { duration: 1, text: 'Chapitre 5:', ease: "none", delay: 0.1 })
     .to(".nom-chap-5", { duration: 1, text: "Avant le combat", ease: "none", delay: 0.1 })
     .to(".num-chap-5", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
