@@ -781,11 +781,12 @@ section {
     z-index: 3;
 
     background-image: url("/img/img_arriere_plan/parallax/parallax_lvl1.png");
-    background-size: 100% 100%;
+    background-size: 1000% 100%;
 
     animation-name: lvl1;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes lvl1 {
@@ -794,7 +795,7 @@ section {
     }
 
     to {
-        background-position: 1000% 0;
+        background-position: 100% 0;
     }
 }
 
@@ -806,26 +807,25 @@ section {
     z-index: 2;
 
     background-image: url("/img/img_arriere_plan/parallax/parallax_lvl2.png");
-    background-size: 100% 100%;
-
-    background-position: 50%;
+    background-size: 1000% 100%;
 
     background-repeat: repeat;
 
     animation-name: lvl2;
-    animation-duration: 2s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-/*@keyframes lvl2 {
+@keyframes lvl2 {
     from {
         background-position: 0 0;
     }
 
     to {
-        background-position: 1000% 0;
+        background-position: 50% 0;
     }
-}*/
+}
 
 .parallax-ch4-lvl3{
     position: absolute;
@@ -835,11 +835,13 @@ section {
     z-index: 1;
 
     background-image: url("/img/img_arriere_plan/parallax/parallax_lvl3.png");
-    background-size: 100% 100%;
+    background-size: 1000% 100%;
 
     animation-name: lvl3;
-    animation-duration: 1s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
 
 @keyframes lvl3 {
@@ -848,7 +850,7 @@ section {
     }
 
     to {
-        background-position: 1000% 0;
+        background-position: 20% 0;
     }
 }
 
