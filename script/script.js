@@ -297,6 +297,10 @@ gsap.timeline({scrollTrigger: {
     //.to(".ss-mon-ch4", { x: "800%", ease: "none", delay: -0.5 })
     .to(".ss-j-ch4", { x: "800%", ease: "none", delay: -0.5 })
 
+    .to(".parallax-ch4-lvl1", { duration: 1.5, opacity: 0, ease: "none" })
+    .to(".parallax-ch4-lvl2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    .to(".parallax-ch4-lvl3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
 //chapitre 5
 gsap.timeline({scrollTrigger: {
     scrub: true,
@@ -328,3 +332,6 @@ gsap.timeline({scrollTrigger: {
     .to(".num-chap-6", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
     .to(".nom-chap-6", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc6", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+
+    .to(".ch6-img1", { duration: 1.5, opacity: 0, ease: "none" })
+    .to(".nom-chap-6", { duration: 1.5, opacity: 1, ease: "none" })

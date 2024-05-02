@@ -686,7 +686,7 @@ section {
     height: 100%;
     width: 100%;
 
-    background-image: url(/img/img_arriere_plan/espace_background.jpg);
+    /*background-image: url(/img/img_arriere_plan/espace_background.jpg);*/
 
     opacity: 0;
 }
@@ -700,7 +700,10 @@ section {
 .ch2-img2 {
     z-index: 4;
 
-    background-color: hotpink;
+    background-image: url("/img/img_arriere_plan/ch2_img2.png");
+    background-size: cover;
+
+    /*background-color: hotpink;*/
 }
 
 .ch2-img3 {
@@ -784,6 +787,25 @@ section {
     to {
         background-position: 1000% 0;
     }
+}
+
+
+.setting-ch4{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.setting-ch4-glass{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+
+.setting-ch4-glass-fin{
+    opacity: 0;
 }
 
 .ss-mar-ch4 {
@@ -888,6 +910,15 @@ section {
 
 
 /*Chapitre 6*/
+
+.ch6-img1 {
+    z-index: 4;
+
+    background-image: url("/img/img_arriere_plan/ch6_img1.png");
+    background-size: cover;
+
+    /*background-color: hotpink;*/
+}
 
 .ss-dice-ch6 {
     width: 60%;
