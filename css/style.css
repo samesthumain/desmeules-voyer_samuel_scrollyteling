@@ -949,26 +949,7 @@ section {
     /*background-color: var(--blanc);*/
 }
 
-.ch6-img {
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
-
-    /*background-color: var(--blanc);*/
-}
-
-.ch6-img2 {
-    opacity: 0;
-
-    background-image: url("/img/img_arriere_plan/ch6_img2.png");
-
-    background-size: cover;
-    /*background-color: var(--blanc);*/
-}
 
 .spritesheet-feu{
     position: absolute;
@@ -1043,6 +1024,31 @@ section {
 
 /*Chapitre 6*/
 
+.setting-ch6 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+
+    background-color: var(--blanc);
+}
+
+.ch6-img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+
+    /*background-color: var(--blanc);*/
+}
+
+
+
 .ch6-img1 {
     z-index: 4;
 
@@ -1050,6 +1056,54 @@ section {
     background-size: cover;
 
     /*background-color: hotpink;*/
+}
+
+.ch6-img2 {
+    opacity: 0;
+
+    background-image: url("/img/img_arriere_plan/ch6_img2.png");
+
+    background-size: cover;
+    /*background-color: var(--blanc);*/
+}
+
+.close-up-power-up {
+    opacity: 0;
+
+    background-image: url("/img/img_elements_visuels/jeremiah_close_up_power_up.png");
+
+    background-size: cover;
+    /*background-color: var(--blanc);*/
+}
+
+.hand-overlay {
+
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url("/img/img_elements_visuels/jeremiah_close_up_power_up_hand_overlay.png");
+
+    background-size: cover;
+    /*background-color: var(--blanc);*/
+
+    z-index: 5;
+}
+
+.dice-haut{
+    background-image: url("/img/img_elements_visuels/dice_haut.png");
+
+    background-size: cover;
+
+    width: 35%;
+    aspect-ratio: 1/1;
+    left: 35%;
+    top: 20%;
+
+    z-index: 2;
+
+    position: absolute;
 }
 
 .ss-dice-ch6 {
@@ -1060,6 +1114,27 @@ section {
     
 
     z-index: 1;
+}
+
+.pentasvg{
+    position: absolute;
+
+    width: 33%;
+    aspect-ratio: 1/1;
+    left: 36%;
+    top: 24%;
+
+    z-index: 1;
+}
+
+.penta{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.star{
+    visibility: hidden;
 }
 
 .feu-ch6{

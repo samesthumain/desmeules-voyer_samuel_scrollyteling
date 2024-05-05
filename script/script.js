@@ -306,9 +306,9 @@ gsap.timeline({scrollTrigger: {
     .to(".hourglass", { transformOrigin: "50% 50%", duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
     .to(".gorilla-float", { duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
 
-
-    gsap.to('.hourglass', { duration: 1.5, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
-    gsap.to('.gorilla-float', { duration: 1.5, repeat: -1, yoyo: true, y: "5%", ease: "power1.inOut", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
+// #5 dans les requis minimums
+gsap.to('.hourglass', { duration: 1.5, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
+gsap.to('.gorilla-float', { duration: 1.5, repeat: -1, yoyo: true, y: "5%", ease: "power1.inOut", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
 
 //chapitre 5
 gsap.timeline({scrollTrigger: {
@@ -347,4 +347,14 @@ gsap.timeline({scrollTrigger: {
     .to(".bnc6", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
     .to(".ch6-img1", { duration: 1.5, opacity: 0, ease: "none" })
-    .to(".nom-chap-6", { duration: 1.5, opacity: 1, ease: "none" })
+
+    .to(".ch6-img2", { duration: 1.5, opacity: 0, ease: "none" })
+    
+    .to(".close-up-power-up", { duration: 1.5, opacity: 1, ease: "none" })
+
+    .to(".dice-haut", { duration: 0.4, scale: 0, ease: "none", delay: 1 })
+    //code morphing ici
+    
+
+gsap.to('.dice-haut', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
+gsap.to('.pentasvg', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
