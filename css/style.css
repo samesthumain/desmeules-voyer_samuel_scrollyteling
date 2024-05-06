@@ -211,6 +211,7 @@ body.is-scrolling .spriteSheet {
     opacity: 0;
 }
 
+
 .gorilla-idle{
     background-image: url("/img/img_elements_visuels/gorilla/gorilla_idle.png");
     opacity: 0;
@@ -1030,10 +1031,10 @@ section {
     height: 100%;
     width: 100%;
 
-    background-image: url(/img/img_arriere_plan/ch2_img2.png);
+    /*background-image: url(/img/img_arriere_plan/ch2_img2.png);
     background-size: cover;
 
-    background-color: var(--blanc);
+    /*background-color: var(--blanc);*/
 }
 
 .ch6-img {
@@ -1177,7 +1178,7 @@ section {
 
 .star-draw{
     position: absolute;
-    right: 8%;
+    left: 8%;
     bottom: 8%;
 
     width: 30%;
@@ -1215,7 +1216,7 @@ section {
 
     width: 20%;
     aspect-ratio: 2/1;
-    left: 14%;
+    left: 35%;
     top: 42.4%;
 
     /*z-index: 2;*/
@@ -1230,7 +1231,7 @@ section {
 
     width: 20%;
     aspect-ratio: 2/1;
-    left: 14%;
+    left: 35%;
     bottom: 22%;
 
     /*z-index: 2;*/

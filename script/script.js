@@ -365,8 +365,11 @@ gsap.timeline({scrollTrigger: {
     
 
     .to(".ch6-background-drawsvg-post", { duration: 0, opacity: 1, ease: "none", delay: 0.5})
+    .from(".dice-post-morph", { duration: 0.6, x: "-200%", ease: "none" })
     .to(".half-dice-haut", { duration: 1.5, y: "-120%", rotate: 40, ease: "none" })
     .to(".half-dice-bas", { duration: 1.5, y: "120%", rotate: -40, ease: "none", delay:-1.5 })
+    .to(".ch6-background-drawsvg-post", { duration: 0, opacity: 0, ease: "none", delay: 1})
+    .to(".ch6-background-drawsvg", { duration: 0, opacity: 0, ease: "none" })
 
 
 gsap.to('.dice-haut', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
