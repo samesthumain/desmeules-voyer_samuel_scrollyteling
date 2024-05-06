@@ -1030,7 +1030,8 @@ section {
     height: 100%;
     width: 100%;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    background-image: url(/img/img_arriere_plan/ch2_img2.png);
+    background-size: cover;
 
     background-color: var(--blanc);
 }
@@ -1158,4 +1159,81 @@ section {
     to {
         background-position: -300% 0;
     }
+}
+
+.ch6-background-drawsvg{
+    background-color: var(--blanc);
+
+    opacity: 0;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.star-2{
+    fill: none;
+}
+
+.star-draw{
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+
+    width: 30%;
+}
+
+.ch6-background-drawsvg-post{
+    background-color: var(--noir);
+
+    opacity: 0;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.dice-post-morph{
+    background-image: url("/img/img_elements_visuels/dice_post_morph.png");
+
+    background-size: cover;
+
+    width: 26%;
+    aspect-ratio: 1/1;
+    right: 14%;
+    bottom: 19%;
+
+    /*z-index: 2;*/
+
+    position: absolute;
+}
+
+.half-dice-haut{
+    background-image: url("/img/img_elements_visuels/half_dice_haut.png");
+
+    background-size: cover;
+
+    width: 20%;
+    aspect-ratio: 2/1;
+    left: 14%;
+    top: 42.4%;
+
+    /*z-index: 2;*/
+
+    position: absolute;
+}
+
+.half-dice-bas{
+    background-image: url("/img/img_elements_visuels/half_dice_bas.png");
+
+    background-size: cover;
+
+    width: 20%;
+    aspect-ratio: 2/1;
+    left: 14%;
+    bottom: 22%;
+
+    /*z-index: 2;*/
+
+    position: absolute;
 }

@@ -335,7 +335,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=3000',
+    end:'+=5000',
     trigger:'#chapitre6',
 }})
     .to(".ch6-img2", { duration: 0, opacity: 1, ease: "none" })
@@ -353,8 +353,22 @@ gsap.timeline({scrollTrigger: {
     .to(".close-up-power-up", { duration: 1.5, opacity: 1, ease: "none" })
 
     .to(".dice-haut", { duration: 0.4, scale: 0, ease: "none", delay: 1 })
+    
     //code morphing ici
     
 
+    .to(".close-up-power-up", { duration: 1.5, opacity: 0, ease: "none" })
+
+    .to(".ch6-background-drawsvg", { duration: 1, opacity: 1, ease: "none" })
+
+    //code drawsvg ici
+    
+
+    .to(".ch6-background-drawsvg-post", { duration: 0, opacity: 1, ease: "none", delay: 0.5})
+    .to(".half-dice-haut", { duration: 1.5, y: "-120%", rotate: 40, ease: "none" })
+    .to(".half-dice-bas", { duration: 1.5, y: "120%", rotate: -40, ease: "none", delay:-1.5 })
+
+
 gsap.to('.dice-haut', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
 gsap.to('.pentasvg', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
+gsap.to('.dice-post-morph', { duration: 1, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
