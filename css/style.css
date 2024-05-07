@@ -124,7 +124,7 @@ body {
     aspect-ratio: 1/1;
     /*background-repeat: no-repeat;*/
 
-    background-image: url("/img/img_elements_visuels/spritesheet_fire.png");
+    background-image: url("../img/img_elements_visuels/spritesheet_fire.png");
 
     background-size: 300%;
 
@@ -197,7 +197,7 @@ body.is-scrolling .spriteSheet {
 
 .spritesheet-dice {
     position: absolute;
-    background-image: url("/img/img_elements_visuels/spritesheet_dice.png");
+    background-image: url("../img/img_elements_visuels/spritesheet_dice.png");
 
     animation-name: dice;
     animation-duration: 0.2s;
@@ -217,18 +217,18 @@ body.is-scrolling .spriteSheet {
     }
 }
 .gorilla-burst{
-    background-image: url("/img/img_elements_visuels/gorilla/gorilla_burst.png");
+    background-image: url("../img/img_elements_visuels/gorilla/gorilla_burst.png");
     opacity: 0;
 }
 
 
 .gorilla-idle{
-    background-image: url("/img/img_elements_visuels/gorilla/gorilla_idle.png");
+    background-image: url("../img/img_elements_visuels/gorilla/gorilla_idle.png");
     opacity: 0;
 }
 
 .gorilla-float{
-    background-image: url("/img/img_elements_visuels/gorilla/gorilla_floating.png");
+    background-image: url("../img/img_elements_visuels/gorilla/gorilla_floating.png");
     opacity: 0;
     z-index: 2;
 }
@@ -259,7 +259,7 @@ ul.technique-gsap li{
 /*Styles dans le header*/
 
 header {
-    background-image: url(/img/img_arriere_plan/espace_background_opt_2.jpg);
+    background-image: url(../img/img_arriere_plan/espace_background_opt_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -462,7 +462,7 @@ section {
     width: 100%;
     z-index: 1;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    /*background-image: url(../img/img_arriere_plan/scene_ch1.png);*/
 
     /*background-color: var(--blanc);*/
 }
@@ -479,7 +479,7 @@ section {
     align-items: center;
     justify-content: center;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    /*background-image: url(../img/img_arriere_plan/scene_ch1.png);*/
 
     background-color: var(--noir);
 }
@@ -488,7 +488,7 @@ section {
     opacity: 0;
     z-index: 1;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    /*background-image: url(../img/img_arriere_plan/scene_ch1.png);*/
 
     /*background-color: var(--blanc);*/
 }
@@ -513,7 +513,7 @@ section {
 }
 
 .spritesheet-jeremiah/*.jeremiah-course*/{
-    background-image: url("/img/img_elements_visuels/jeremiah/spritesheet_jeremiah.png");
+    background-image: url("../img/img_elements_visuels/jeremiah/spritesheet_jeremiah.png");
 
     background-size: 1300% 100%;
 
@@ -529,12 +529,12 @@ section {
 }*/
 
 .jeremiah-pret{
-    background-image: url(/img/img_elements_visuels/jeremiah/jeremiah_pret.png);
+    background-image: url(../img/img_elements_visuels/jeremiah/jeremiah_pret.png);
     background-size: cover;
 }
 
 .jeremiah-dice{
-    background-image: url(/img/img_elements_visuels/jeremiah/jeremiah_dice.png);
+    background-image: url(../img/img_elements_visuels/jeremiah/jeremiah_dice.png);
     background-size: cover;
 }
 
@@ -550,7 +550,7 @@ section {
 }
 
 .marco-course{
-    background-image: url("/img/img_elements_visuels/marco/spritesheet_course_marco.png");
+    background-image: url("../img/img_elements_visuels/marco/spritesheet_course_marco.png");
 
     background-size: 800%;
 
@@ -563,27 +563,27 @@ section {
 }
 
 .marco-idle{
-    background-image: url("/img/img_elements_visuels/marco/marco_idle.png");
+    background-image: url("../img/img_elements_visuels/marco/marco_idle.png");
     background-size: cover;
 }
 
 .marco-pre-saut{
-    background-image: url("/img/img_elements_visuels/marco/marco_pre_saut.png");
+    background-image: url("../img/img_elements_visuels/marco/marco_pre_saut.png");
     background-size: cover;
 }
 
 .marco-saut{
-    background-image: url("/img/img_elements_visuels/marco/marco_saute.png");
+    background-image: url("../img/img_elements_visuels/marco/marco_saute.png");
     background-size: cover;
 }
 
 .marco-tackle{
-    background-image: url("/img/img_elements_visuels/marco/marco_tackle.png");
+    background-image: url("../img/img_elements_visuels/marco/marco_tackle.png");
     background-size: cover;
 }
 
 .marco-kick{
-    background-image: url("/img/img_elements_visuels/marco/marco_kick.png");
+    background-image: url("../img/img_elements_visuels/marco/marco_kick.png");
     background-size: cover;
 }
 
@@ -637,7 +637,7 @@ section {
 }
 
 /*.robot-idle{
-    background-image: url("/img/img_elements_visuels/robots/robot_idle.png");
+    background-image: url("../img/img_elements_visuels/robots/robot_idle.png");
     background-size: cover;
     opacity: 0;
 }
@@ -645,14 +645,14 @@ section {
 .robot-shoot{
     opacity: 0;
 
-    background-image: url("/img/img_elements_visuels/robots/robot_shoot.png");
+    background-image: url("../img/img_elements_visuels/robots/robot_shoot.png");
     background-size: cover;
 }
 
 .robot-revole{
     opacity: 0;
 
-    background-image: url("/img/img_elements_visuels/robots/robot_revole.png");
+    background-image: url("../img/img_elements_visuels/robots/robot_revole.png");
     background-size: cover;
 }*/
 
@@ -711,7 +711,7 @@ section {
     height: 100%;
     width: 100%;
 
-    /*background-image: url(/img/img_arriere_plan/espace_background.jpg);*/
+    /*background-image: url(../img/img_arriere_plan/espace_background.jpg);*/
 
     opacity: 0;
 }
@@ -725,7 +725,7 @@ section {
 .ch2-img2 {
     z-index: 4;
 
-    background-image: url("/img/img_arriere_plan/ch2_img2.png");
+    background-image: url("../img/img_arriere_plan/ch2_img2.png");
     background-size: cover;
 
     /*background-color: hotpink;*/
@@ -771,7 +771,7 @@ section {
     width: 100%;
     z-index: 1;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    /*background-image: url(../img/img_arriere_plan/scene_ch1.png);*/
 
     /*background-color: var(--blanc);*/
 }
@@ -779,7 +779,7 @@ section {
 .setting-ch3-fin {
     opacity: 0;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    /*background-image: url(../img/img_arriere_plan/scene_ch1.png);*/
 
     /*background-color: var(--blanc);*/
 }
@@ -829,7 +829,7 @@ section {
     width: 100%;
     z-index: 6;
 
-    background-image: url("/img/img_arriere_plan/parallax/parallax_lvl1.png");
+    background-image: url("../img/img_arriere_plan/parallax/parallax_lvl1.png");
     background-size: 1000% 100%;
 
     animation-name: lvl1;
@@ -855,7 +855,7 @@ section {
     width: 100%;
     z-index: 5;
 
-    background-image: url("/img/img_arriere_plan/parallax/parallax_lvl2.png");
+    background-image: url("../img/img_arriere_plan/parallax/parallax_lvl2.png");
     background-size: 1000% 100%;
 
     background-repeat: repeat;
@@ -883,7 +883,7 @@ section {
     width: 100%;
     z-index: 4;
 
-    background-image: url("/img/img_arriere_plan/parallax/parallax_lvl3.png");
+    background-image: url("../img/img_arriere_plan/parallax/parallax_lvl3.png");
     background-size: 1000% 100%;
 
     animation-name: lvl3;
@@ -979,7 +979,7 @@ section {
 /*Chapitre 5*/
 
 .ch5 {
-    background-image: url("/img/img_arriere_plan/espace_background_opt_2.jpg");
+    background-image: url("../img/img_arriere_plan/espace_background_opt_2.jpg");
     background-size: cover;
 }
 
@@ -990,7 +990,7 @@ section {
     width: 100%;
     z-index: 1;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    /*background-image: url(../img/img_arriere_plan/scene_ch1.png);*/
 
     /*background-color: var(--blanc);*/
 }
@@ -999,7 +999,7 @@ section {
 
 .spritesheet-feu{
     position: absolute;
-    background-image: url("/img/img_elements_visuels/spritesheet_fire.png");
+    background-image: url("../img/img_elements_visuels/spritesheet_fire.png");
     
     aspect-ratio: 1/1;
     background-size: 300%;
@@ -1055,12 +1055,12 @@ section {
 }
 
 .jeremiah-assis{
-    background-image: url("/img/img_elements_visuels/jeremiah/jeremiah_assis.png");
+    background-image: url("../img/img_elements_visuels/jeremiah/jeremiah_assis.png");
     background-size: cover;
 }
 
 .gorilla-assis{
-    background-image: url("/img/img_elements_visuels/gorilla/gorilla_assis.png");
+    background-image: url("../img/img_elements_visuels/gorilla/gorilla_assis.png");
     background-size: cover;
 }
 
@@ -1076,7 +1076,7 @@ section {
     height: 100%;
     width: 100%;
 
-    /*background-image: url(/img/img_arriere_plan/ch2_img2.png);
+    /*background-image: url(../img/img_arriere_plan/ch2_img2.png);
     background-size: cover;
 
     /*background-color: var(--blanc);*/
@@ -1089,7 +1089,7 @@ section {
     width: 100%;
     z-index: 1;
 
-    /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
+    /*background-image: url(../img/img_arriere_plan/scene_ch1.png);*/
 
     /*background-color: var(--blanc);*/
 }
@@ -1099,7 +1099,7 @@ section {
 .ch6-img1 {
     z-index: 4;
 
-    background-image: url("/img/img_arriere_plan/ch6_img1.png");
+    background-image: url("../img/img_arriere_plan/ch6_img1.png");
     background-size: cover;
 
     /*background-color: hotpink;*/
@@ -1108,7 +1108,7 @@ section {
 .ch6-img2 {
     opacity: 0;
 
-    background-image: url("/img/img_arriere_plan/ch6_img2.png");
+    background-image: url("../img/img_arriere_plan/ch6_img2.png");
 
     background-size: cover;
     /*background-color: var(--blanc);*/
@@ -1117,7 +1117,7 @@ section {
 .close-up-power-up {
     opacity: 0;
 
-    background-image: url("/img/img_elements_visuels/jeremiah_close_up_power_up.png");
+    background-image: url("../img/img_elements_visuels/jeremiah_close_up_power_up.png");
 
     background-size: cover;
     /*background-color: var(--blanc);*/
@@ -1130,7 +1130,7 @@ section {
     height: 100%;
     width: 100%;
 
-    background-image: url("/img/img_elements_visuels/jeremiah_close_up_power_up_hand_overlay.png");
+    background-image: url("../img/img_elements_visuels/jeremiah_close_up_power_up_hand_overlay.png");
 
     background-size: cover;
     /*background-color: var(--blanc);*/
@@ -1139,7 +1139,7 @@ section {
 }
 
 .dice-haut{
-    background-image: url("/img/img_elements_visuels/dice_haut.png");
+    background-image: url("../img/img_elements_visuels/dice_haut.png");
 
     background-size: cover;
 
@@ -1240,7 +1240,7 @@ section {
 }
 
 .dice-post-morph{
-    background-image: url("/img/img_elements_visuels/dice_post_morph.png");
+    background-image: url("../img/img_elements_visuels/dice_post_morph.png");
 
     background-size: cover;
 
@@ -1255,7 +1255,7 @@ section {
 }
 
 .half-dice-haut{
-    background-image: url("/img/img_elements_visuels/half_dice_haut.png");
+    background-image: url("../img/img_elements_visuels/half_dice_haut.png");
 
     background-size: cover;
 
@@ -1270,7 +1270,7 @@ section {
 }
 
 .half-dice-bas{
-    background-image: url("/img/img_elements_visuels/half_dice_bas.png");
+    background-image: url("../img/img_elements_visuels/half_dice_bas.png");
 
     background-size: cover;
 
