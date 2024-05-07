@@ -309,7 +309,7 @@ gsap.timeline({scrollTrigger: {
     pin:true,
     markers:true,
     start: 'center center',
-    end:'+=3000',
+    end:'+=5000',
     trigger:'#chapitre4',
 }})
 
@@ -340,7 +340,7 @@ gsap.timeline({scrollTrigger: {
 
 // #5 dans les requis minimums
 gsap.to('.hourglass', { duration: 1.5, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
-gsap.to('.gorilla-float', { duration: 1.5, repeat: -1, yoyo: true, y: "5%", ease: "power1.inOut", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
+gsap.to('.gorilla-float', { duration: 2, repeat: -1, yoyo: true, y: "15%", ease: "power1.inOut", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
 
 //chapitre 5
 gsap.timeline({scrollTrigger: {
