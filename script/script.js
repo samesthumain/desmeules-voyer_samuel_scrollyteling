@@ -61,6 +61,10 @@ gsap.timeline({scrollTrigger: {
     end:'+=30000',
     trigger:'#chapitre1',
 }})
+
+    .to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
+    .to(".marco-idle", { duration: 0, opacity: 0, ease: "none", })
+
     //intro
     .to(".num-chap-1", { duration: 1, text: 'Chapitre 1:', ease: "none", delay: 0.1 })
     .to(".nom-chap-1", { duration: 1, text: "Intrusion", ease: "none", delay: 0.1 })
@@ -72,8 +76,10 @@ gsap.timeline({scrollTrigger: {
     //sprite cours
     .from(".ss-j-ch1", { x: "800%", ease: "power1.out", })
 
-    .to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
-    .to(".jeremiah-idle", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+    //.to(".ss-j-ch1", { duration: 0, scaleX: -1, animationPlayState: "paused" , backgroundPosition: "-1200% 0%", ease: "none" })
+    .to(".ss-j-ch1", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-900% 0%", ease: "none" })
+    //.to(".ss-j-ch1", { duration: 0, backgroundPosition: "600% 0%" })
+    //.to(".jeremiah-idle", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
 
     //paroles
     .to(".ch1-line1", { text: "Ici Jeremiah,", ease: "none", delay: 0.1 })
@@ -97,16 +103,20 @@ gsap.timeline({scrollTrigger: {
     .to(".ch1-line1", { duration: 0, text: "", ease: "none", delay: 0.1 })
     .to(".ch1-line3", { duration: 0, text: "", ease: "none" })
 
-    .to(".jeremiah-idle", { duration: 0, opacity: 0, ease: "none", })
-    .to(".jeremiah-pret", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
+    .to(".ss-j-ch1", { duration: 0, scaleX: -1, backgroundPosition: "-1100% 0%", ease: "none" })
+    //.to(".jeremiah-idle", { duration: 0, opacity: 0, ease: "none", })
+    .to(".ss-dice-ch1", { duration: 0, opacity: 1, ease: "none", })
 
     //robots
     .from(".ss-robot-1", { x: "800%", ease: "power1.out", })
     .from(".ss-robot-2", { x: "800%", ease: "power1.out", delay: -0.49 })
     .from(".ss-robot-3", { x: "800%", ease: "power1.out", delay: -0.48 })
 
-    .to(".robot-course", { duration: 0, opacity: 0, ease: "none", })
-    .to(".robot-idle", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".spritesheet-robot", { duration: 0, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-800% 0%", ease: "none" })
+    //.to(".robot-course", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".robot-idle", { duration: 0, opacity: 1, ease: "none", })
 
     //entre en scene marco
     .from(".ss-m-ch1", { duration: 0, scaleX: -1, ease: "none", })
@@ -124,37 +134,51 @@ gsap.timeline({scrollTrigger: {
     .to(".marco-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
     .to(".marco-kick", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
 
-    .to(".robot-idle-2", { duration: 0, opacity: 0, ease: "none" })
-    .to(".robot-revole-2", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".ss-robot-2", { duration: 0, backgroundPosition: "-900% 0%", ease: "none" })
+    //.to(".robot-idle-2", { duration: 0, opacity: 0, ease: "none" })
+    //.to(".robot-revole-2", { duration: 0, opacity: 1, ease: "none", })
 
     .to(".ss-robot-2", { x: "800%", ease: "power1.out", })
     .to(".ss-m-ch1", { x: "900%", ease: "power1.out", delay: -0.5 })
 
-    .to(".jeremiah-pret", { duration: 0, opacity: 0, ease: "none", })
-    .to(".jeremiah-dice", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
+    .to(".ss-j-ch1", { duration: 0, scaleX: -1, backgroundPosition: "-800% 0%", ease: "none" })
+    //.to(".jeremiah-pret", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".jeremiah-dice", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
 
     .to(".ss-dice-ch1", { x: "-19000%", ease: "none", })
 
-    .to(".robot-idle-1", { duration: 0, opacity: 0, ease: "none", delay: -0.4})
-    .to(".robot-revole-1", { duration: 0, opacity: 1, ease: "none", delay: -0.4 })
+
+    .to(".ss-robot-1", { duration: 0, backgroundPosition: "-900% 0%", ease: "none", delay: -0.4 })
+    //.to(".robot-idle-1", { duration: 0, opacity: 0, ease: "none", delay: -0.4})
+    //.to(".robot-revole-1", { duration: 0, opacity: 1, ease: "none", delay: -0.4 })
 
     .to(".ss-robot-1", { x: "800%", ease: "power1.out", delay: -0.4 })
 
-    .to(".jeremiah-dice", { duration: 0, opacity: 0, ease: "none", })
-    .to(".jeremiah-course", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
+    .to(".ss-j-ch1", { duration: 0, scaleX: -1, animationIterationCount: "infinite", animationDuration: 0.8 , backgroundPosition: "-900% 0%", ease: "none" })
+    //.to(".jeremiah-dice", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".jeremiah-course", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
 
     .to(".ss-j-ch1", { duration: 0.2, x: "170%", ease: "none", })
 
-    .to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
-    .to(".jeremiah-dice", { duration: 0, opacity: 1, ease: "none", })
+
+    .to(".ss-j-ch1", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-800% 0%", ease: "none" })
+    //.to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".jeremiah-dice", { duration: 0, opacity: 1, ease: "none", })
 
     .to(".ss-dice-ch1", { x: "0%", ease: "none", })
 
-    .to(".jeremiah-dice", { duration: 0, opacity: 0, ease: "none", })
-    .to(".jeremiah-pret", { duration: 0, opacity: 1, ease: "none", })
 
-    .to(".robot-idle-3", { duration: 0, opacity: 0, ease: "none", delay: 0.1 })
-    .to(".robot-shoot", { duration: 0, opacity: 1, ease: "none", })
+    .to(".ss-j-ch1", { duration: 0, scaleX: -1, backgroundPosition: "-1100% 0%", ease: "none" })
+    //.to(".jeremiah-dice", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".jeremiah-pret", { duration: 0, opacity: 1, ease: "none", })
+
+
+    .to(".ss-robot-3", { duration: 0, backgroundPosition: "-1000% 0%", ease: "none", delay: 0.1 })
+    //.to(".robot-idle-3", { duration: 0, opacity: 0, ease: "none", delay: 0.1 })
+    //.to(".robot-shoot", { duration: 0, opacity: 1, ease: "none", })
 
     //tire
     .to(".tire-robot", { duration: 0, opacity: 1, ease: "none", })
@@ -165,17 +189,21 @@ gsap.timeline({scrollTrigger: {
     .to(".setting-ch1-fin", { duration: 0, opacity: 1, ease: "none", })
 
 
-    .to(".jeremiah-pret", { duration: 0, opacity: 0, ease: "none", delay: -0.1 })
-    .to(".jeremiah-course", { duration: 0, scaleX: 1, opacity: 1, ease: "none", delay: -0.1 })
+    .to(".ss-j-ch1", { duration: 0, scaleX: 1, animationIterationCount: "infinite", animationDuration: 0.8 , backgroundPosition: "-900% 0%", ease: "none", delay: -0.1 })
+    .to(".ss-dice-ch1", { duration: 0, opacity: 0, ease: "none", delay: -0.1 })
 
     .to(".ss-j-ch1", { duration: 0.2, x: "100%", y: "50%", ease: "none", delay: -0.1 })
 
-    .to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
-    .to(".jeremiah-idle", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
 
-    .to(".robot-shoot", { duration: 0, opacity: 0, ease: "none" })
-    .to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none" })
-    .to(".ss-robot-3", { duration: 0, scaleX: -1, ease: "none", })
+    .to(".ss-j-ch1", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-900% 0%", ease: "none" })
+    //.to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".jeremiah-idle", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })
+
+
+    .to(".ss-robot-3", { duration: 0, scaleX: -1, backgroundPosition: "-800% 0%", ease: "none", delay: 0.1 })
+    //.to(".robot-shoot", { duration: 0, opacity: 0, ease: "none" })
+    //.to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none" })
+    //.to(".ss-robot-3", { duration: 0, scaleX: -1, ease: "none", })
 
     .to(".marco-kick", { duration: 0, opacity: 0, ease: "none", })
     .to(".ss-m-ch1", { duration: 0, scaleX: 1, ease: "none", })
@@ -189,8 +217,10 @@ gsap.timeline({scrollTrigger: {
 
     .to(".ss-m-ch1", { duration: 0.2, x: "550%", ease: "none", })
 
-    .to(".robot-idle-3", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
-    .to(".robot-revole-3", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
+
+    .to(".ss-robot-3", { duration: 0, scaleX: -1, backgroundPosition: "-900% 0%", ease: "none", delay: -0.2 })
+    //.to(".robot-idle-3", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    //.to(".robot-revole-3", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
 
     .to(".ss-robot-3", { x: "-250%", ease: "none", delay: -0.2 })
 
@@ -204,8 +234,10 @@ gsap.timeline({scrollTrigger: {
     .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
     .to(".marco-idle", { duration: 0, opacity: 1, ease: "none", })
 
-    .to(".robot-revole-3", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
-    .to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
+
+    .to(".ss-robot-3", { duration: 0, backgroundPosition: "-800% 0%", ease: "none", delay: -0.3 })
+    //.to(".robot-revole-3", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    //.to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
 
     .to(".ch1-line4", { text: "Des intrus ont détruit la porte!", ease: "none", delay: 0.1 })
     .to(".ch1-line5", { text: "Gardes, attrapez-les!", ease: "none" })

@@ -162,7 +162,7 @@ body.is-scrolling .spriteSheet {
     
 }
 
-@keyframes course-jeremiah {
+@keyframes course {
     from {
         background-position: 0 0;
     }
@@ -171,6 +171,16 @@ body.is-scrolling .spriteSheet {
         background-position: -800% 0;
     }
 }
+
+/*@keyframes assis-jeremiah {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -800% 0;
+    }
+}*/
 
 .spritesheet-marco {
     position: absolute;
@@ -502,23 +512,21 @@ section {
     opacity: 0;
 }
 
-.spritesheet-jeremiah.jeremiah-course{
-    background-image: url("/img/img_elements_visuels/jeremiah/spritesheet_jeremiah_course.png");
+.spritesheet-jeremiah/*.jeremiah-course*/{
+    background-image: url("/img/img_elements_visuels/jeremiah/spritesheet_jeremiah.png");
 
-    background-size: 800%;
+    background-size: 1300% 100%;
 
-    animation-name: course-jeremiah;
+    animation-name: course;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
 
     animation-timing-function: steps(8);
-
-    opacity: 0;
 }
 
-.spritesheet-jeremiah.ss-j-ch1.jeremiah-course{
+/*.spritesheet-jeremiah.ss-j-ch1.jeremiah-course{
     opacity: 0;
-}
+}*/
 
 .jeremiah-pret{
     background-image: url(/img/img_elements_visuels/jeremiah/jeremiah_pret.png);
@@ -538,6 +546,7 @@ section {
     top: 28%;
 
     z-index: 7;
+    opacity: 0;
 }
 
 .marco-course{
@@ -545,7 +554,7 @@ section {
 
     background-size: 800%;
 
-    animation-name: course-jeremiah;
+    animation-name: course;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
 
@@ -610,16 +619,16 @@ section {
 
     
     
-    /*background-color: var(--blanc);*/
+    /*background-color: var(--blanc);
     z-index: 2;
 }
 
-.robot-course{
-    background-image: url("/img/img_elements_visuels/robots/spritesheet_robot_course.png");
+.robot-course{*/
+    background-image: url("../img/img_elements_visuels/robots/spritesheet_robot.png");
 
-    background-size: 800%;
+    background-size: 1100%;
 
-    animation-name: course-jeremiah;
+    animation-name: course;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 
@@ -627,7 +636,7 @@ section {
     
 }
 
-.robot-idle{
+/*.robot-idle{
     background-image: url("/img/img_elements_visuels/robots/robot_idle.png");
     background-size: cover;
     opacity: 0;
@@ -645,7 +654,7 @@ section {
 
     background-image: url("/img/img_elements_visuels/robots/robot_revole.png");
     background-size: cover;
-}
+}*/
 
 .ss-robot-1 {
     position: absolute;
@@ -773,6 +782,42 @@ section {
     /*background-image: url(/img/img_arriere_plan/scene_ch1.png);*/
 
     /*background-color: var(--blanc);*/
+}
+
+.ss-mar-ch3 {
+    height: 20%;
+    aspect-ratio: 1/1;
+
+    right: 8%;
+    bottom: 15%;
+
+    z-index: 1;
+}
+
+.ss-j-ch3 {
+    height: 20%;
+    aspect-ratio: 1/1;
+
+    right: 8%;
+    bottom: 15%;
+
+    z-index: 1;
+}
+
+.ss-gua-ch3 {
+    position: absolute;
+    height: 20%;
+    aspect-ratio: 1/1;
+
+    right: 8%;
+    bottom: 15%;
+
+    z-index: 1;
+}
+
+.guard-idle{
+    background-image: url(../img/img_elements_visuels/guard/garde_idle.png);
+    background-size: cover;
 }
 
 /*Chapitre 4*/
