@@ -730,7 +730,7 @@ section {
 }
 
 .ch2-img1 {
-    z-index: 5;
+    z-index: 6;
 
 
     background-image: url("../img/img_arriere_plan/ch2_img1.png");
@@ -740,7 +740,7 @@ section {
 }
 
 .ch2-img2 {
-    z-index: 4;
+    z-index: 5;
 
     background-image: url("../img/img_arriere_plan/ch2_img2.png");
     background-size: cover;
@@ -749,7 +749,7 @@ section {
 }
 
 .ch2-img3 {
-    z-index: 3;
+    z-index: 4;
 
     background-image: url("../img/img_arriere_plan/ch2_img3.png");
     background-size: cover;
@@ -758,7 +758,7 @@ section {
 }
 
 .ch2-img4 {
-    z-index: 2;
+    z-index: 3;
 
     background-image: url("../img/img_arriere_plan/ch2_img4.png");
     background-size: cover;
@@ -767,7 +767,7 @@ section {
 }
 
 .ch2-img5 {
-    z-index: 1;
+    z-index: 2;
 
     background-image: url("../img/img_arriere_plan/ch2_img5.png");
     background-size: cover;
@@ -908,7 +908,7 @@ section {
     background-repeat: repeat;
 
     animation-name: lvl2;
-    animation-duration: 50s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -919,7 +919,7 @@ section {
     }
 
     to {
-        background-position: 50% 0;
+        background-position: 100% 0;
     }
 }
 

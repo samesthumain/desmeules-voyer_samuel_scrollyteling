@@ -288,6 +288,9 @@ gsap.timeline({scrollTrigger: {
     .to(".ch2-img5", { duration: 0, opacity: 1, ease: "none"})
     .to(".ch2-img4", { duration: 1, opacity: 0, ease: "none"})
 
+    .to(".ch2-img6", { duration: 0, opacity: 1, ease: "none"})
+    .to(".ch2-img5", { duration: 1, opacity: 0, ease: "none"})
+
 //chapitre 3
 gsap.timeline({scrollTrigger: {
     scrub: true,
