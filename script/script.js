@@ -186,6 +186,7 @@ gsap.timeline({scrollTrigger: {
     .to(".tire-robot", { duration: 0, opacity: 0, ease: "none", })
 
     .to(".setting-ch1-debut", { duration: 0, opacity: 0, ease: "none", })
+    .to(".explosion-ch1", { duration: 0, opacity: 1, ease: "none", })
     .to(".setting-ch1-fin", { duration: 0, opacity: 1, ease: "none", })
 
 
@@ -195,6 +196,8 @@ gsap.timeline({scrollTrigger: {
     .to(".ss-j-ch1", { duration: 0.2, x: "100%", y: "50%", ease: "none", delay: -0.1 })
 
 
+    .to(".explosion-ch1", { duration: 0.1, scale: 1, ease: "none", delay: -0.1 })
+    .to(".explosion-ch1", { duration: 0, opacity: 0, ease: "none", })
     .to(".ss-j-ch1", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-900% 0%", ease: "none" })
     //.to(".jeremiah-course", { duration: 0, opacity: 0, ease: "none", })
     //.to(".jeremiah-idle", { duration: 0, scaleX: -1, opacity: 1, ease: "none", })

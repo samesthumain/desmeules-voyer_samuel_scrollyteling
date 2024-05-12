@@ -704,6 +704,19 @@ section {
     opacity: 0;
 }
 
+.explosion-ch1{
+    position: absolute;
+    height: 50%;
+    aspect-ratio: 1/1;
+    bottom: 8%;
+    left: 22%;
+    background-image: url(../img/img_elements_visuels/explosion.png);
+    background-size: cover;
+    z-index: 2;
+    opacity: 0;
+    scale: 0;
+}
+
 /*Chapitre 2*/
 
 .ch2 .ch2-img {
