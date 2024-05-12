@@ -719,7 +719,11 @@ section {
 .ch2-img1 {
     z-index: 5;
 
-    background-color: aqua;
+
+    background-image: url("../img/img_arriere_plan/ch2_img1.png");
+    background-size: cover;
+
+    /*background-color: aqua;*/
 }
 
 .ch2-img2 {
@@ -734,19 +738,37 @@ section {
 .ch2-img3 {
     z-index: 3;
 
-    background-color: red;
+    background-image: url("../img/img_arriere_plan/ch2_img3.png");
+    background-size: cover;
+
+    /*background-color: red;*/
 }
 
 .ch2-img4 {
     z-index: 2;
 
-    background-color: purple;
+    background-image: url("../img/img_arriere_plan/ch2_img4.png");
+    background-size: cover;
+
+    /*background-color: purple;*/
 }
 
 .ch2-img5 {
     z-index: 1;
 
-    background-color: green;
+    background-image: url("../img/img_arriere_plan/ch2_img5.png");
+    background-size: cover;
+
+    /*background-color: green;*/
+}
+
+.ch2-img6 {
+    z-index: 1;
+
+    background-image: url("../img/img_arriere_plan/ch2_img6.png");
+    background-size: cover;
+
+    /*background-color: green;*/
 }
 
 .ans-19 {
