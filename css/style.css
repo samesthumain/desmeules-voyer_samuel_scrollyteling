@@ -115,8 +115,10 @@ body {
     margin: 0%;
     padding: 0%;
 
-    height: 10000vh;
+    /*height: 5800vh;*/
     overflow-x: hidden;
+
+
 }
 
 .spriteSheet {
@@ -272,6 +274,24 @@ ul.technique-gsap{
 
 ul.technique-gsap li{
     margin: 5px 0;
+}
+
+footer {
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--noir);
+}
+
+.text-footer{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*Styles dans le header*/

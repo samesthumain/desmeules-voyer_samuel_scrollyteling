@@ -507,8 +507,13 @@ gsap.timeline({scrollTrigger: {
     
     .to(".bnc6", { duration: 1.5, opacity: 1, ease: "none" })
 
+    .to(".nom-chap-6", { duration: 0, opacity: 1, ease: "none" })
+    .to(".nom-chap-6", { duration: 0, text: "", ease: "none" })
+
+    .to(".nom-chap-6", { duration: 1, text: "À suivre", ease: "none", delay: 1 })
+
 
 gsap.to('.dice-haut', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
 gsap.to('.pentasvg', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
 gsap.to('.dice-post-morph', { duration: 1, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
-gsap.to('.dice-post-morph-2', { duration: 1, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
+gsap.to('.dice-post-morph-2', { duration: 1, repeat: -1, rotate: -360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
