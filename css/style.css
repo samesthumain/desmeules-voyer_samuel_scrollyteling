@@ -34,7 +34,7 @@
 h1,
 .h1 {
 
-    font-size: 400%;
+    font-size: 4rem;
     color: var(--blanc);
 
     font-family: "Big Shoulders Stencil Text";
@@ -47,37 +47,37 @@ h1,
 
 h2,
 .h2 {
-    font-size: 200%;
+    font-size: 2rem;
     color: var(--blanc);
 }
 
 h3,
 .h3 {
-    font-size: 180%;
+    font-size: 1.7rem;
     color: var(--noir);
 }
 
 h4,
 .h4 {
-    font-size: 70%;
+    font-size: 1rem;
     color: var(--noir);
 }
 
 h5,
 .h5 {
-    font-size: 50%;
+    font-size: 0.8rem;
     color: var(--noir);
 }
 
 h6,
 .h6 {
-    font-size: 45%;
+    font-size: 0.7rem;
     color: var(--noir);
 }
 
 p,
 .p {
-    font-size: 50%;
+    font-size: 0.8rem;
     color: var(--blanc);
 }
 
