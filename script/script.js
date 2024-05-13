@@ -361,11 +361,11 @@ gsap.timeline({scrollTrigger: {
 
     .to('.ss-dice-ch3', {
         motionPath: '.motionpath-line',
-        duration: 2,
+        duration: 4,
       })
 
-    .to(".setting-ch3-debut", { duration: 0, opacity: 0, ease: "none", delay: -1.8 })
-    .to(".setting-ch3-fin", { duration: 0, opacity: 1, ease: "none", delay: -1.8 })
+    .to(".setting-ch3-debut", { duration: 0, opacity: 0, ease: "none", delay: -3.5 })
+    .to(".setting-ch3-fin", { duration: 0, opacity: 1, ease: "none", delay: -3.5 })
 
     .to(".bnc3", { duration: 1.5, opacity: 1, ease: "none", delay: 1.5 })
 
