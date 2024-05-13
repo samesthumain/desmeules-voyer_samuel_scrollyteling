@@ -94,12 +94,13 @@
                 <li>déplacements de position (x et y)</li>
                 <li>Fondu enchainé (opacity)</li>
                 <li>Rotation</li>
-                <!--li>scrollTrigger 
+                <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
+                        <li>trigger="#chapitre1"</li> 
+                        <li>scrub</li>
+                        <li>pin</li>
                     </ul> 
-                </li--> 
+                </li> 
             </ul>
 
         </section>
@@ -107,7 +108,10 @@
         <!-- ---------- Début Chapitre 2 ------------------ -->
         <section id="chapitre2">
             <div class="scene ch2">
-                <h2 class="ans-19"></h2>
+                <div class="ch2-img wrapper-text-ch2">
+                    <h2 class="ans-19"></h2>
+                </div>
+                
 
                 <!--img src="/img/img_arriere_plan/ch2_img2.png" alt=""-->
 
@@ -128,12 +132,13 @@
 
             <ul class="technique-gsap"> 
                 <li>Fondu enchainé (opacity)</li>
-                <!--li>scrollTrigger 
+                <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li--> 
+                        <li>trigger="#chapitre2"</li> 
+                        <li>scrub</li>
+                        <li>pin</li>
+                    </ul>
+                </li> 
             </ul>
 
 
@@ -143,20 +148,27 @@
         <section id="chapitre3">
             <div class="scene ch3">
                 <div class="spritesheet-jeremiah ss-j-ch3 jeremiah-idle"></div>
-                <div class="spritesheet-jeremiah ss-j-ch3 jeremiah-pret"></div>
+            <!--div class="spritesheet-jeremiah ss-j-ch3 jeremiah-pret"></div>
                 <div class="spritesheet-jeremiah ss-j-ch3 jeremiah-dice"></div>
-                <div class="spritesheet-jeremiah ss-j-ch3 jeremiah-course"></div>
+                <div class="spritesheet-jeremiah ss-j-ch3 jeremiah-course"></div-->
 
                 <div class="spritesheet-marco ss-mar-ch3 marco-idle"></div>
-                <div class="spritesheet-marco ss-mar-ch3 marco-wind-up"></div>
+                <!--div class="spritesheet-marco ss-mar-ch3 marco-wind-up"></div>
                 <div class="spritesheet-marco ss-mar-ch3 marco-punch"></div>
-                <div class="spritesheet-marco ss-mar-ch3 marco-course"></div>
+                <div class="spritesheet-marco ss-mar-ch3 marco-course"></div-->
 
                 <div class="spritesheet-monika ss-mon-ch3 monika-idle"></div>
-                <div class="spritesheet-monika ss-mon-ch3 monika-course"></div>
+                <!--div class="spritesheet-monika ss-mon-ch3 monika-course"></div-->
 
                 <div class="spritesheet-guard ss-gua-ch3 guard-course"></div>
-                <div class="spritesheet-guard ss-gua-ch3 guard-idle"></div>
+                <!--div class="spritesheet-guard ss-gua-ch3 guard-idle"></div-->
+
+                <svg class="motionpath-svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                    <!--line class="motionpath-line" x1="300" y1="0" x2="0" y2="200" style="stroke:black;stroke-width:2" /-->
+                    <path class="motionpath-line" d="M150 5 L75 200 L225 200 Z"/>
+                  </svg>
+
+                <div class="spritesheet-dice ss-dice-ch3"></div>
 
                 <img src="img/img_arriere_plan/scene_ch3.png" class="setting-ch3 setting-ch3-debut">
                 <img src="img/img_arriere_plan/scene_ch3_fin.png" class="setting-ch3 setting-ch3-fin">
@@ -171,12 +183,14 @@
 
             <ul class="technique-gsap"> 
                 <li>Fondu enchainé (opacity)</li>
-                <!--li>scrollTrigger 
+                <li>Motion path</li>
+                <li>scrollTrigger
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
+                        <li>trigger="#chapitre3"</li> 
+                        <li>scrub</li>
+                        <li>pin</li>
                     </ul> 
-                </li--> 
+                </li> 
             </ul>
 
 
@@ -186,12 +200,12 @@
         <section id="chapitre4">
             <div class="scene ch4">
                 <div class="spritesheet-jeremiah ss-j-ch4 jeremiah-course"></div>
-                <div class="spritesheet-jeremiah ss-j-ch4 jeremiah-idle"></div>
+                <!--div class="spritesheet-jeremiah ss-j-ch4 jeremiah-idle"></div-->
 
                 <div class="spritesheet-marco ss-mar-ch4 marco-course"></div>
-                <div class="spritesheet-marco ss-mar-ch4 marco-idle"></div>
+                <!--div class="spritesheet-marco ss-mar-ch4 marco-idle"></div-->
 
-                <!--div class="spritesheet-monika ss-mon-ch4 monika-course"></div-->
+                <div class="spritesheet-monika ss-mon-ch4 monika-course"></div>
                 <!--div class="spritesheet-monika ss-mon-ch4 monika-idle"></div-->
 
                 <div class="spritesheet-gorilla ss-g-ch4 gorilla-float"></div>
@@ -219,12 +233,14 @@
 
             <ul class="technique-gsap"> 
                 <li>déplacements de position (x et y)</li> 
-                <li>Fondu enchainé (opacity)</li> 
-                <!--li>scrollTrigger 
+                <li>Fondu enchainé (opacity)</li>
+                <li>Rotation</li>
+                <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul--> 
+                        <li>trigger="#chapitre3"</li> 
+                        <li>scrub</li>
+                        <li>pin</li>
+                    </ul> 
                 </li> 
             </ul>
 
@@ -246,7 +262,7 @@
 
                 <div class="spritesheet-marco ss-mar-ch5 marco-idle"></div>
 
-                <div class="spritesheet-monika ss-mon-ch5 monika-assis"></div>
+                <div class="spritesheet-monika ss-mon-ch5"></div>
 
                 <div class="spritesheet-gorilla ss-g-ch5 gorilla-assis"></div>
 
@@ -270,12 +286,13 @@
 
             <ul class="technique-gsap"> 
                 <li>Fondu enchainé (opacity)</li>  
-                <!--li>scrollTrigger 
+                <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li--> 
+                        <li>trigger="#chapitre3"</li> 
+                        <li>scrub</li>
+                        <li>pin</li>
+                    </ul>
+                </li> 
             </ul>
 
 
@@ -330,10 +347,25 @@
                 </div>
 
                 <div class="setting-ch6">
-                    <div class="spritesheet-jeremiah ss-j-ch6 jeremiah-idle"></div>
-                    <div class="spritesheet-marco ss-mar-ch6 marco-idle"></div>
-                    <div class="spritesheet-gorilla ss-g-ch6 gorilla-idle"></div>
                     <div class="spritesheet-monika ss-mon-ch6 monika-idle"></div>
+                    <div class="spritesheet-gorilla ss-g-ch6 gorilla-idle"></div>
+                    <div class="spritesheet-jeremiah ss-j-ch6">
+                        <div class="spritesheet-dice ss-dice-ch6-2"></div>
+                        <div class="dice-post-morph-2"></div>
+                    </div>
+                    <div class="spritesheet-marco ss-mar-ch6 marco-idle"></div>
+
+
+                    <div class="spritesheet-guard ss-gua-ch6"></div>
+
+                    <div class="spritesheet-relius ss-r-ch6"></div>
+
+                    <div class="spritesheet-neo ss-n-ch6">
+                        <div class="spritesheet-dice ss-dice-ch6-3"></div>
+                        
+                    </div>
+
+                    
                 </div>
                 <div class="background-nom-chapitre bnc6">
                     <h1 class="num-chap-6"></h1>
@@ -343,12 +375,16 @@
 
             <ul class="technique-gsap"> 
                 <li>Fondu enchainé (opacity)</li>
-                <!--li>scrollTrigger 
+                <li>Déplacements de position (x et y)</li>
+                <li>Morphage</li>
+                <li>Draw SVG</li>
+                <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
+                        <li>trigger="#chapitre3"</li> 
+                        <li>scrub</li>
+                        <li>pin</li>
                     </ul> 
-                </li--> 
+                </li> 
             </ul>
 
 
@@ -366,7 +402,11 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
 
+    <!--plugiciels payants-->
+
+    <!--plugiciels payants-->
 
 
 

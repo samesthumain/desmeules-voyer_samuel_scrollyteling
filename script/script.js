@@ -1,5 +1,5 @@
 //importer les plugins
-gsap.registerPlugin(ScrollTrigger,TextPlugin)
+gsap.registerPlugin(ScrollTrigger,TextPlugin,MotionPathPlugin)
 
 //variables et constantes
 const body = document.querySelector("body");
@@ -122,17 +122,21 @@ gsap.timeline({scrollTrigger: {
     .from(".ss-m-ch1", { duration: 0, scaleX: -1, ease: "none", })
     .from(".ss-m-ch1", { x: "-800%", ease: "none", })
 
-    .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
-    .to(".marco-pre-saut", { duration: 0, opacity: 1, ease: "none", })
+    .to(".ss-m-ch1", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-1000% 0%", ease: "none" })
+    //.to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".marco-pre-saut", { duration: 0, opacity: 1, ease: "none", })
 
     .to(".ss-m-ch1", { x: "500%", y: "-50%", ease: "none", delay: 0.2 })
     .to(".ss-m-ch1", {duration: 0.2, y: "-20%", ease: "none", delay: -0.2 })
     //.to(".ss-m-ch1", { y: "-10%", ease: "none", delay: 0.1 })
-    .to(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.5 })
-    .to(".marco-saut", { duration: 0, opacity: 1, ease: "none", delay: -0.5 })
 
-    .to(".marco-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
-    .to(".marco-kick", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
+    .to(".ss-m-ch1", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-1100% 0%", ease: "none", delay: -0.5 })
+    //.to(".marco-pre-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.5 })
+    //.to(".marco-saut", { duration: 0, opacity: 1, ease: "none", delay: -0.5 })
+
+    .to(".ss-m-ch1", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0 , backgroundPosition: "-900% 0%", ease: "none", delay: -0.2 })
+    //.to(".marco-saut", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    //.to(".marco-kick", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
 
 
     .to(".ss-robot-2", { duration: 0, backgroundPosition: "-900% 0%", ease: "none" })
@@ -208,15 +212,17 @@ gsap.timeline({scrollTrigger: {
     //.to(".robot-idle-3", { duration: 0, opacity: 1, ease: "none" })
     //.to(".ss-robot-3", { duration: 0, scaleX: -1, ease: "none", })
 
-    .to(".marco-kick", { duration: 0, opacity: 0, ease: "none", })
+    .to(".ss-m-ch1", { duration: 0, scaleX: 1, animationIterationCount: "infinite", animationDuration: 0.8 , backgroundPosition: "-900% 0%", ease: "none", delay: -0.2 })
+    //.to(".marco-kick", { duration: 0, opacity: 0, ease: "none", })
     .to(".ss-m-ch1", { duration: 0, scaleX: 1, ease: "none", })
-    .to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
+    //.to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
 
     .to(".ss-m-ch1", { duration: 0, y: "35%", ease: "none", })
     .to(".ss-m-ch1", { x: "600%", ease: "none", })
 
-    .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
-    .to(".marco-tackle", { duration: 0, opacity: 1, ease: "none", })
+    .to(".ss-m-ch1", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-1200% 0%", ease: "none" })
+    //.to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".marco-tackle", { duration: 0, opacity: 1, ease: "none", })
 
     .to(".ss-m-ch1", { duration: 0.2, x: "550%", ease: "none", })
 
@@ -227,15 +233,17 @@ gsap.timeline({scrollTrigger: {
 
     .to(".ss-robot-3", { x: "-250%", ease: "none", delay: -0.2 })
 
-    .to(".marco-tackle", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
-    .to(".marco-course", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
+    .to(".ss-m-ch1", { duration: 0, scaleX: 1, animationIterationCount: "infinite", animationDuration: 0.8 , backgroundPosition: "-1200% 0%", ease: "none" })
+    //.to(".marco-tackle", { duration: 0, opacity: 0, ease: "none", delay: -0.2 })
+    //.to(".marco-course", { duration: 0, opacity: 1, ease: "none", delay: -0.2 })
 
     .to(".ss-m-ch1", { x: "450%", ease: "none", delay: -0.2 })
 
     .to(".ss-robot-3", { rotate: "-80%", y: "30%", ease: "none", delay: -0.8 })
 
-    .to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
-    .to(".marco-idle", { duration: 0, opacity: 1, ease: "none", })
+    .to(".ss-m-ch1", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-800% 0%", ease: "none" })
+    //.to(".marco-course", { duration: 0, opacity: 0, ease: "none", })
+    //.to(".marco-idle", { duration: 0, opacity: 1, ease: "none", })
 
 
     .to(".ss-robot-3", { duration: 0, backgroundPosition: "-800% 0%", ease: "none", delay: -0.3 })
@@ -255,9 +263,9 @@ gsap.timeline({scrollTrigger: {
 gsap.timeline({scrollTrigger: {
     scrub: true,
     pin:true,
-    markers:true,
+    //markers:true,
     start: 'center center',
-    end:'+=3000',
+    end:'+=16000',
     trigger:'#chapitre2',
 }})
     .to(".ch2-img1", { duration: 0, opacity: 1, ease: "none"})
@@ -270,59 +278,114 @@ gsap.timeline({scrollTrigger: {
 
     .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
+    .to(".bnc2", { duration: 1.5, opacity: 0.5, ease: "none", delay: 0.5 })
+    .to(".wrapper-text-ch2", { duration: 0, opacity: 1, ease: "none", delay: -0.5 })
 
-    .to(".ans-19", { transformOrigin: '50% 50%', duration: 1, text: "19 ans plus tôt", ease: "none" })
+    .to(".ans-19", { duration: 1.5, text: "19 ans plus tôt...", ease: "none" })
+
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
 
 
+    .to(".ans-19", { duration: 2, text: "Un groupe de réfugiés sont arrivés à Vault blank avec l'espoir d'y trouver un endrois où vivre en sécurité.", ease: "none" })
+
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+
+    .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none" })
 
     //switch d'image
     .to(".ch2-img2", { duration: 0, opacity: 1, ease: "none"})
     .to(".ch2-img1", { duration: 1, opacity: 0, ease: "none"})
+
+    .to(".bnc2", { duration: 1.5, opacity: 0.5, ease: "none", delay: 0.5 })
+    .to(".ans-19", { duration: 2, text: "Mais ils ne savaient pas que Vault Blank vivait sous un régime autoritaire depuis que leur chef, Relius a pris le contôle.", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none" })
     
     .to(".ch2-img3", { duration: 0, opacity: 1, ease: "none"})
     .to(".ch2-img2", { duration: 1, opacity: 0, ease: "none"})
+
+    .to(".bnc2", { duration: 1.5, opacity: 0.5, ease: "none", delay: 0.5 })
+    .to(".ans-19", { duration: 2, text: "Relius a pris avantage des réfugiés, il a tué tous les adultes et volés leurs enfants dans le but de les endoctriner.", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none" })
     
     .to(".ch2-img4", { duration: 0, opacity: 1, ease: "none"})
     .to(".ch2-img3", { duration: 1, opacity: 0, ease: "none"})
+
+    .to(".bnc2", { duration: 1.5, opacity: 0.5, ease: "none", delay: 0.5 })
+    .to(".ans-19", { duration: 1.5, text: "19 ans plus tard,", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".ans-19", { duration: 2, text: "La fille du chef du groupe de réfugiés, Monika, est maintenant l'assistante personelle de Relius et est responsable de l'armurie de Vault Blank.", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".ans-19", { duration: 2, text: "Elle a appris le sort de son père et a rejoint un groupe révolutionnaire pour la libération de vault blank, utilisant sa position pour les aider.", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none" })
     
     .to(".ch2-img5", { duration: 0, opacity: 1, ease: "none"})
     .to(".ch2-img4", { duration: 1, opacity: 0, ease: "none"})
 
+    .to(".bnc2", { duration: 1.5, opacity: 0.5, ease: "none", delay: 0.5 })
+    .to(".ans-19", { duration: 2, text: "Elle a aider à organiser le jour de la révolte, fait exploser la prison de Vault Blank, libérant tous ses prisonniers politiques.", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".ans-19", { duration: 2, text: "Tout se passait comme prévu mais, une explosion retentit...", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".bnc2", { duration: 1.5, opacity: 0, ease: "none" })
+
     .to(".ch2-img6", { duration: 0, opacity: 1, ease: "none"})
     .to(".ch2-img5", { duration: 1, opacity: 0, ease: "none"})
+
+    .to(".bnc2", { duration: 1.5, opacity: 0.5, ease: "none", delay: 0.5 })
+    .to(".ans-19", { duration: 2, text: "La porte de Vault blank explose et des débris sont projetés dans l'air, heurtant plusieurs révolutionnaires, dont Monika qui perd un bras dans l'accident.", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".ans-19", { duration: 2, text: "La révolte fut complètement repoussée et tous les survivant furent arrêtés.", ease: "none" })
+    .to(".ans-19", { duration: 0, text: "", ease: "none", delay: 1 })
+    .to(".bnc2", { duration: 1.5, opacity: 1, ease: "none" })
 
 //chapitre 3
 gsap.timeline({scrollTrigger: {
     scrub: true,
     pin:true,
-    markers:true,
+    //markers:true,
     start: 'center center',
     end:'+=3000',
     trigger:'#chapitre3',
 }})
     .to(".num-chap-3", { duration: 1, text: 'Chapitre 3:', ease: "none", delay: 0.1 })
+    .to(".ss-mar-ch3", { duration: 0, opacity: 1, scaleX: -1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-800% 0%", ease: "none" })
+    .to(".ss-j-ch3", { duration: 0, opacity: 1, scaleX: -1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-800% 0%", ease: "none" })
+    .to(".ss-mon-ch3", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-900% 0%", ease: "none" })
     .to(".nom-chap-3", { duration: 1, text: "Emprisonnés", ease: "none", delay: 0.1 })
     .to(".num-chap-3", { duration: 1.5, opacity: 0, ease: "none", delay: 1 })
     .to(".nom-chap-3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc3", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
-    .to(".setting-ch3-debut", { duration: 0, opacity: 0, ease: "none", delay: 1 })
-    .to(".setting-ch3-fin", { duration: 0, opacity: 1, ease: "none", })
+    .to('.ss-dice-ch3', {
+        motionPath: '.motionpath-line',
+        duration: 2,
+      })
+
+    .to(".setting-ch3-debut", { duration: 0, opacity: 0, ease: "none", delay: -1.8 })
+    .to(".setting-ch3-fin", { duration: 0, opacity: 1, ease: "none", delay: -1.8 })
+
+    .to(".bnc3", { duration: 1.5, opacity: 1, ease: "none", delay: 1.5 })
 
 //chapitre 4
 gsap.timeline({scrollTrigger: {
     scrub: true,
     pin:true,
-    markers:true,
+    //markers:true,
     start: 'center center',
     end:'+=5000',
     trigger:'#chapitre4',
 }})
 
     .to(".marco-idle", { duration: 0, opacity: 0, ease: "none", })
+    .to(".ss-g-ch4", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-900% 0%", ease: "none" })
+    .to(".ss-g-ch4", { duration: 0, opacity: 0, ease: "none", })
     .to(".marco-course", { duration: 0, opacity: 1, ease: "none", })
     .to(".jeremiah-course", { duration: 0, opacity: 1, ease: "none", })
     .to(".ss-mar-ch4", { x: "-300%", duration: 0, scaleX: -1, ease: "none", })
+    .to(".ss-mon-ch4", { x: "-300%", duration: 0, scaleX: -1, ease: "none", })
     .to(".ss-j-ch4", { x: "-300%", duration: 0, scaleX: -1, ease: "none", })
 
     .to(".num-chap-4", { duration: 1, text: 'Chapitre 4:', ease: "none", delay: 0.1 })
@@ -331,9 +394,10 @@ gsap.timeline({scrollTrigger: {
     .to(".nom-chap-4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc4", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
-    .to(".ss-mar-ch4", { x: "900%", ease: "none" })
+    .to(".ss-mar-ch4", { duration: 1, x: "900%", ease: "none" })
     //.to(".ss-mon-ch4", { x: "800%", ease: "none", delay: -0.5 })
-    .to(".ss-j-ch4", { x: "900%", ease: "none", delay: -0.5 })
+    .to(".ss-j-ch4", { duration: 1, x: "900%", ease: "none", delay: -1 })
+    .to(".ss-mon-ch4", { duration: 1, x: "900%", ease: "none", delay: -1 })
 
     .to(".setting-ch4", { duration: 1.5, opacity: 1, ease: "none" })
     .to(".setting-ch4-glass-debut", { duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
@@ -344,20 +408,24 @@ gsap.timeline({scrollTrigger: {
     .to(".hourglass", { transformOrigin: "50% 50%", duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
     .to(".gorilla-float", { duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
 
+    .to(".bnc4", { duration: 1.5, opacity: 1, ease: "none", delay: 1.5 })
+
 // #5 dans les requis minimums
-gsap.to('.hourglass', { duration: 1.5, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
+gsap.to('.hourglass', { duration: 1.5, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'top top', end:'center center', trigger:'#chapitre4', toggleActions: 'play complete reverse reset' } } );
 gsap.to('.gorilla-float', { duration: 2, repeat: -1, yoyo: true, y: "15%", ease: "power1.inOut", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre4', } } );
 
 //chapitre 5
 gsap.timeline({scrollTrigger: {
     scrub: true,
     pin:true,
-    markers:true,
+    //markers:true,
     start: 'center center',
     end:'+=3000',
     trigger:'#chapitre5',
 }})
     .to(".marco-idle", { duration: 0, opacity: 1, ease: "none"})
+    .to(".ss-mar-ch5", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-800% 0%", ease: "none" })
+    .to(".ss-mon-ch5", { duration: 0, scaleX: -1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-900% 0%", ease: "none" })
     .to(".jeremiah-assis", { duration: 0, opacity: 1, ease: "none"})
     .to(".gorilla-assis", { duration: 0, opacity: 1, scaleX: -1, ease: "none"})
 
@@ -367,16 +435,26 @@ gsap.timeline({scrollTrigger: {
     .to(".nom-chap-5", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
     .to(".bnc5", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
 
+    .to(".bnc5", { duration: 1.5, opacity: 1, ease: "none", delay: 3 })
+
 //chapitre 6
 gsap.timeline({scrollTrigger: {
     scrub: true,
     pin:true,
-    markers:true,
+    //markers:true,
     start: 'center center',
     end:'+=5000',
     trigger:'#chapitre6',
 }})
+    .to(".ss-j-ch6", { duration: 0, opacity: 1, ease: "none" })
+    .to(".ss-mar-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-800% 0%", ease: "none" })
+    .to(".ss-mon-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-800% 0%", ease: "none" })
+    .to(".ss-j-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-1000% 0%", ease: "none" })
+    .to(".ss-g-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-1000% 0%", ease: "none" })
+    .to(".ss-n-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-200% 0%", ease: "none" })
     .to(".ch6-img2", { duration: 0, opacity: 1, ease: "none" })
+
+    .to(".setting-ch6", { duration: 0, opacity: 0, ease: "none" })
 
     .to(".num-chap-6", { duration: 1, text: 'Chapitre 6:', ease: "none", delay: 0.1 })
     .to(".nom-chap-6", { duration: 1, text: "Relius", ease: "none", delay: 0.1 })
@@ -387,16 +465,21 @@ gsap.timeline({scrollTrigger: {
     .to(".ch6-img1", { duration: 1.5, opacity: 0, ease: "none" })
 
     .to(".ch6-img2", { duration: 1.5, opacity: 0, ease: "none" })
-    
-    .to(".close-up-power-up", { duration: 1.5, opacity: 1, ease: "none" })
 
-    .to(".dice-haut", { duration: 0.4, scale: 0, ease: "none", delay: 1 })
+    .to(".setting-ch6", { duration: 1.5, opacity: 1, ease: "none", delay: -1.5 })
+    
+    .to(".close-up-power-up", { duration: 1.5, opacity: 1, ease: "none", delay: 1.5 })
+    .to(".setting-ch6", { duration: 1.5, opacity: 0, ease: "none", delay: -1.5 })
+    
+
+    .to(".dice-haut", { duration: 0.2, scale: 0, ease: "none", delay: 1 })
     
     //code morphing ici
     
 
     .to(".close-up-power-up", { duration: 1.5, opacity: 0, ease: "none" })
 
+    
     .to(".ch6-background-drawsvg", { duration: 1, opacity: 1, ease: "none" })
 
     //code drawsvg ici
@@ -408,8 +491,24 @@ gsap.timeline({scrollTrigger: {
     .to(".half-dice-bas", { duration: 1.5, y: "120%", rotate: -40, ease: "none", delay:-1.5 })
     .to(".ch6-background-drawsvg-post", { duration: 0, opacity: 0, ease: "none", delay: 1})
     .to(".ch6-background-drawsvg", { duration: 0, opacity: 0, ease: "none" })
+    .to(".ss-j-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-800% 0%", ease: "none" })
+    .to(".ss-dice-ch6-2", { duration: 0, opacity: 0, ease: "none" })
+    .to(".ss-dice-ch6-3", { duration: 0, opacity: 0, ease: "none" })
+    .to(".dice-post-morph-2", { duration: 0, opacity: 1, ease: "none" })
+    .to(".ss-n-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-300% 0%", ease: "none" })
+    .to(".setting-ch6", { duration: 0.5, opacity: 1, ease: "none" })
+
+
+    .to(".ss-mar-ch6", { duration: 0, scaleX: 1, animationIterationCount: "1", animationDuration: 0, backgroundPosition: "-1100% 0%", ease: "none" })
+    .to(".ss-r-ch6", { duration: 0, scaleX: 1, backgroundPosition: "-1100% 0%", ease: "none" })
+
+    .to(".ss-mar-ch6", { duration: 0.5,x:"50%", ease: "none" })
+    .to(".ss-r-ch6", { duration: 0.5,x:"-50%", ease: "none", delay:-0.5 })
+    
+    .to(".bnc6", { duration: 1.5, opacity: 1, ease: "none" })
 
 
 gsap.to('.dice-haut', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
 gsap.to('.pentasvg', { duration: 0.4, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
 gsap.to('.dice-post-morph', { duration: 1, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
+gsap.to('.dice-post-morph-2', { duration: 1, repeat: -1, rotate: 360, ease: "none", scrollTrigger: { /*markers:true,*/ start: 'center center', end:'center center', trigger:'#chapitre6', } } );
