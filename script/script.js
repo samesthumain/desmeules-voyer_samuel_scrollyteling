@@ -1,5 +1,5 @@
 //importer les plugins
-gsap.registerPlugin(ScrollTrigger,TextPlugin,MotionPathPlugin,MorphSVGPlugin,DrawSVGPlugin)
+gsap.registerPlugin(ScrollTrigger,TextPlugin,MotionPathPlugin)
 
 //variables et constantes
 const body = document.querySelector("body");
@@ -475,7 +475,7 @@ gsap.timeline({scrollTrigger: {
     .to(".dice-haut", { duration: 0.2, scale: 0, ease: "none", delay: 1 })
     
     //code morphing ici
-    .to(".penta", { duration: 0.4, morphSVG:{ shape:".star", shapeIndex:8 }/*, delay: -0.4*/ })
+    
 
     .to(".close-up-power-up", { duration: 1.5, opacity: 0, ease: "none" })
 
@@ -483,7 +483,7 @@ gsap.timeline({scrollTrigger: {
     .to(".ch6-background-drawsvg", { duration: 1, opacity: 1, ease: "none" })
 
     //code drawsvg ici
-    .fromTo( ".star-2", { drawSVG: "0% 0%" }, { drawSVG: "0% 100%", duration: 4, ease: "power1.inOut", delay: 1 })
+    
 
     .to(".ch6-background-drawsvg-post", { duration: 0, opacity: 1, ease: "none", delay: 0.5})
     .from(".dice-post-morph", { duration: 0.6, x: "-200%", ease: "none" })
